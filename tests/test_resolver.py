@@ -1,15 +1,22 @@
-from fuzzy_match import fuzzy_score
-from embedding_match import embed, cosine_sim
+from src.entity_resolution.fuzzy_match import fuzzy_score
+from src.entity_resolution.embedding_match import embed, cosine_sim
+
 
 def resolve(entity_a, entity_b):
-    name_score = fuzzy_score(entity_a["name"], entity_b["name"])
+    name_score = fuzzy_score(
+        entity_a["name"],
+        entity_b["name"]
+    )
 
     emb_a = embed(entity_a["name"])
     emb_b = embed(entity_b["name"])
 
     emb_score = cosine_sim(emb_a, emb_b)
 
-    website_match = entity_a.get("website") == entity_b.get("website")
+    website_match = (
+        entity_a.get("website")
+        == entity_b.get("website")
+    )
 
     final_score = (
         0.4 * name_score +
