@@ -1,5 +1,6 @@
-from fuzzy_match import fuzzy_score
-from embedding_match import embed, cosine_sim
+
+from src.entity_resolution.fuzzy_match import fuzzy_score
+from src.entity_resolution.embedding_match import embed, cosine_sim
 
 def resolve(entity_a, entity_b):
     name_score = fuzzy_score(entity_a["name"], entity_b["name"])
