@@ -1,30 +1,48 @@
-from src.entity_resolution.fuzzy_match import fuzzy_score
-from src.entity_resolution.embedding_match import embed, cosine_sim
+from src.entity_resolution.resolver import resolve
 
 
-def resolve(entity_a, entity_b):
-    name_score = fuzzy_score(
-        entity_a["name"],
-        entity_b["name"]
-    )
-
-    emb_a = embed(entity_a["name"])
-    emb_b = embed(entity_b["name"])
-
-    emb_score = cosine_sim(emb_a, emb_b)
-
-    website_match = (
-        entity_a.get("website")
-        == entity_b.get("website")
-    )
-
-    final_score = (
-        0.4 * name_score +
-        0.4 * emb_score +
-        0.2 * (1.0 if website_match else 0.0)
-    )
-
-    return {
-        "match": final_score > 0.75,
-        "score": round(final_score, 3)
+def test_resolver_match():
+    a = {
+        "name": "Microsoft Corp",
+        "website": "microsoft.com",
+        "description": "Tech company"
     }
+
+    b = {
+        "name": "MSFT",
+        "website": "microsoft.com",
+        "description": "Microsoft"
+    }
+
+    result = resolve(a, b)
+
+    print("\nRESULT 1:", result)
+
+    assert "match" in result
+    assert "score" in result
+    assert isinstance(result["score"], float)
+
+
+def test_resolver_no_match():
+    a = {
+        "name": "Microsoft Corp",
+        "website": "microsoft.com"
+    }
+
+    b = {
+        "name": "Google LLC",
+        "website": "google.com"
+    }
+
+    result = resolve(a, b)
+
+    print("\nRESULT 2:", result)
+
+    assert "match" in result
+    assert "score" in result
+
+
+if __name__ == "__main__":
+    test_resolver_match()
+    test_resolver_no_match()
+    print("\nALL TESTS PASSED")

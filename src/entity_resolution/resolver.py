@@ -1,24 +1,50 @@
+import json
+import numpy as np
+from rapidfuzz import fuzz
 
-from src.entity_resolution.fuzzy_match import fuzzy_score
-from src.entity_resolution.embedding_match import embed, cosine_sim
+from src.entity_resolution.embedding_store import get_embedding
+from src.entity_resolution.llm_judge import llm_match
 
-def resolve(entity_a, entity_b):
-    name_score = fuzzy_score(entity_a["name"], entity_b["name"])
 
-    emb_a = embed(entity_a["name"])
-    emb_b = embed(entity_b["name"])
+def cosine(a, b):
+    return float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b)))
 
-    emb_score = cosine_sim(emb_a, emb_b)
 
-    website_match = entity_a.get("website") == entity_b.get("website")
+def resolve(a, b):
 
-    final_score = (
-        0.3 * name_score +
-        0.6 * emb_score +
-        0.1 * (1.0 if website_match else 0.0)
-)
+    # 1. fuzzy score
+    fuzzy = fuzz.token_set_ratio(a["name"], b["name"]) / 100
 
-    return {
-        "match": final_score > 0.75,
-        "score": round(final_score, 3)
+    # 2. embedding score
+    emb_a = get_embedding(a["name"])
+    emb_b = get_embedding(b["name"])
+    emb_score = cosine(emb_a, emb_b)
+
+    # 3. website match
+    website = 1.0 if a.get("website") == b.get("website") else 0.0
+
+    # 4. weighted score
+    score = 0.2 * fuzzy + 0.6 * emb_score + 0.2 * website
+
+    result = {
+        "match": score > 0.75,
+        "score": round(score, 4),
+        "used_llm": False
     }
+
+    # 5. LLM fallback (uncertain zone)
+    if 0.55 < score < 0.80:
+        llm_raw = llm_match(a, b)
+
+        # llm_match returns JSON string → convert to dict
+        llm_result = json.loads(llm_raw)
+
+        return {
+            "match": llm_result["match"],
+            "score": round(score, 4),
+            "confidence": llm_result.get("confidence"),
+            "reason": llm_result.get("reason"),
+            "used_llm": True
+        }
+
+    return result
