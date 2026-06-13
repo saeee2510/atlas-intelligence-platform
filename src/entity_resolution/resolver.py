@@ -13,10 +13,10 @@ def resolve(entity_a, entity_b):
     website_match = entity_a.get("website") == entity_b.get("website")
 
     final_score = (
-        0.4 * name_score +
-        0.4 * emb_score +
-        0.2 * (1.0 if website_match else 0.0)
-    )
+        0.3 * name_score +
+        0.6 * emb_score +
+        0.1 * (1.0 if website_match else 0.0)
+)
 
     return {
         "match": final_score > 0.75,
