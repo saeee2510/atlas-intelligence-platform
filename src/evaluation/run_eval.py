@@ -1,71 +1,41 @@
 from src.entity_resolution.resolver import resolve
 from src.evaluation.dataset import LABELS
-from src.evaluation.metrics import precision, recall, f1
+from src.evaluation.metrics import evaluate
 
 
-def run_evaluation(threshold=0.75):
-    tp = fp = fn = tn = 0
-
-    results = []
-
-    for entity_a, entity_b, label in LABELS:
-        output = resolve(entity_a, entity_b)
-
-        score = output["score"]
-        pred = score >= threshold
-
-        # confusion matrix update
-        if pred and label == 1:
-            tp += 1
-        elif pred and label == 0:
-            fp += 1
-        elif not pred and label == 1:
-            fn += 1
-        else:
-            tn += 1
-
-        results.append({
-            "entity_a": entity_a,
-            "entity_b": entity_b,
-            "label": label,
-            "score": score,
-            "pred": pred
-        })
-
-    # compute metrics
-    p = precision(tp, fp)
-    r = recall(tp, fn)
-    f = f1(p, r)
-
-    return {
-        "tp": tp,
-        "fp": fp,
-        "fn": fn,
-        "tn": tn,
-        "precision": round(p, 3),
-        "recall": round(r, 3),
-        "f1": round(f, 3),
-        "results": results
-    }
-
-
-if __name__ == "__main__":
-    report = run_evaluation()
+def run_evaluation():
+    preds = []
+    labels = []
 
     print("\n===== ENTITY RESOLUTION EVALUATION =====\n")
 
-    print(f"TP: {report['tp']}")
-    print(f"FP: {report['fp']}")
-    print(f"FN: {report['fn']}")
-    print(f"TN: {report['tn']}\n")
+    for a_name, b_name, label in LABELS:
 
-    print(f"Precision: {report['precision']}")
-    print(f"Recall:    {report['recall']}")
-    print(f"F1 Score:  {report['f1']}\n")
+        a = {"name": a_name}
+        b = {"name": b_name}
 
-    print("===== SAMPLE RESULTS =====")
-    for r in report["results"]:
+        result = resolve(a, b)
+
+        # convert score → prediction
+        pred = 1 if result["score"] > 0.60 else 0
+
+        preds.append(pred)
+        labels.append(label)
+
         print(
-            f"{r['entity_a']}  vs  {r['entity_b']}  "
-            f"=> label={r['label']} score={r['score']} pred={r['pred']}"
+            f"{a_name:20} vs {b_name:20} "
+            f"=> label={label} score={result['score']:.3f} pred={pred}"
         )
+
+    metrics = evaluate(preds, labels)
+
+    print("\n===== FINAL METRICS =====")
+    print(f"Precision: {metrics['precision']:.3f}")
+    print(f"Recall:    {metrics['recall']:.3f}")
+    print(f"F1 Score:  {metrics['f1']:.3f}")
+
+    return metrics
+
+
+if __name__ == "__main__":
+    run_evaluation()

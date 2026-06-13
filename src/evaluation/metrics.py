@@ -1,8 +1,20 @@
-def precision(tp, fp):
-    return tp / (tp + fp + 1e-9)
+def evaluate(preds, labels):
+    tp = fp = fn = 0
 
-def recall(tp, fn):
-    return tp / (tp + fn + 1e-9)
+    for p, l in zip(preds, labels):
+        if p == 1 and l == 1:
+            tp += 1
+        elif p == 1 and l == 0:
+            fp += 1
+        elif p == 0 and l == 1:
+            fn += 1
 
-def f1(p, r):
-    return 2 * p * r / (p + r + 1e-9)
+    precision = tp / (tp + fp + 1e-9)
+    recall = tp / (tp + fn + 1e-9)
+    f1 = 2 * precision * recall / (precision + recall + 1e-9)
+
+    return {
+        "precision": precision,
+        "recall": recall,
+        "f1": f1
+    }
