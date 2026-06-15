@@ -7,6 +7,8 @@ from src.db.models import (
 from src.entity_resolution.resolver import resolve
 
 
+THRESHOLD = 0.60  # key fix: clustering threshold
+
 
 def canonicalize():
 
@@ -15,16 +17,17 @@ def canonicalize():
     session = SessionLocal()
 
     companies = session.query(Company).all()
-
     print("Companies:", len(companies))
 
-    for company in companies:
+    # IMPORTANT FIX: load once (not inside loop)
+    canonicals = session.query(CanonicalCompany).all()
 
-        canonicals = session.query(CanonicalCompany).all()
+    for company in companies:
 
         best_match = None
         best_score = 0
 
+        # find best canonical match
         for canonical in canonicals:
 
             result = resolve(
@@ -38,11 +41,14 @@ def canonicalize():
                 }
             )
 
-            if result["score"] > best_score:
-                best_score = result["score"]
+            score = result["score"]
+
+            if score > best_score:
+                best_score = score
                 best_match = canonical
 
-        if best_match and best_score > 0.75:
+        # CASE 1: MATCH FOUND → attach to existing canonical
+        if best_match and best_score >= THRESHOLD:
 
             session.add(CompanyMapping(
                 company_id=company.id,
@@ -50,6 +56,7 @@ def canonicalize():
                 match_score=best_score
             ))
 
+        # CASE 2: NO MATCH → create new canonical
         else:
 
             new_canonical = CanonicalCompany(
@@ -61,6 +68,9 @@ def canonicalize():
 
             session.add(new_canonical)
             session.flush()
+
+            # IMPORTANT: update canonicals list so future matches see it
+            canonicals.append(new_canonical)
 
             session.add(CompanyMapping(
                 company_id=company.id,

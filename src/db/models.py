@@ -52,3 +52,14 @@ class CompanyMapping(Base):
     )
 
     match_score = Column(Float)
+
+class CompanyRelationship(Base):
+    __tablename__ = "company_relationships"
+
+    id = Column(Integer, primary_key=True)
+
+    source_company = Column(Integer, ForeignKey("canonical_companies.id"))
+    target_company = Column(Integer, ForeignKey("canonical_companies.id"))
+
+    relationship_type = Column(String)  # competitor, partner, acquired, etc.
+    confidence = Column(Float)
