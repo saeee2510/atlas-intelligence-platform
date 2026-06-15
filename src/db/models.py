@@ -7,6 +7,7 @@ from sqlalchemy import (
     ForeignKey
 )
 from sqlalchemy.orm import declarative_base
+from pgvector.sqlalchemy import Vector
 
 Base = declarative_base()
 
@@ -20,7 +21,7 @@ class Company(Base):
     website = Column(String)
     description = Column(Text)
 
-    embedding = Column(Text)
+    embedding = Column(Vector(1536))
 
 
 class CanonicalCompany(Base):
