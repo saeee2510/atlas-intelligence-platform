@@ -9,7 +9,7 @@ from src.entity_resolution.review_queue import add_to_review_queue
 ALIASES = {
     "msft": "microsoft",
     "google llc": "google",
-    "alphabet inc": "google",
+    
     "open ai": "openai"
 }
 
