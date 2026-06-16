@@ -68,3 +68,15 @@ class CompanyRelationship(Base):
     relationship_type = Column(String)  # competitor, partner, acquired, etc.
     confidence = Column(Float)
 
+class ReviewQueue(Base):
+    __tablename__ = "review_queue"
+
+    id = Column(Integer, primary_key=True)
+
+    company_a = Column(Integer, ForeignKey("companies.id"))
+    company_b = Column(Integer, ForeignKey("companies.id"))
+
+    score = Column(Float)
+
+    status = Column(String, default="PENDING")
+
