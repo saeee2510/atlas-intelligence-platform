@@ -4,7 +4,8 @@ from sqlalchemy import (
     Float,
     Integer,
     Text,
-    ForeignKey
+    ForeignKey,
+    DateTime
 )
 from sqlalchemy.orm import declarative_base
 from pgvector.sqlalchemy import Vector
@@ -79,4 +80,16 @@ class ReviewQueue(Base):
     score = Column(Float)
 
     status = Column(String, default="PENDING")
+
+class EvaluationRun(Base):
+    __tablename__ = "evaluation_runs"
+
+    id = Column(Integer, primary_key=True)
+
+    run_date = Column(DateTime)
+
+    precision = Column(Float)
+    recall = Column(Float)
+    f1 = Column(Float)
+    accuracy = Column(Float)
 
