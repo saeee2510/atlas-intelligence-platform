@@ -31,7 +31,11 @@ class CanonicalCompany(Base):
 
     canonical_name = Column(String)
     website = Column(String)
+
     industry = Column(String)
+    subcategory = Column(String)
+    business_model = Column(String)
+    company_size = Column(String)
 
     confidence = Column(Float)
 
@@ -63,3 +67,4 @@ class CompanyRelationship(Base):
 
     relationship_type = Column(String)  # competitor, partner, acquired, etc.
     confidence = Column(Float)
+

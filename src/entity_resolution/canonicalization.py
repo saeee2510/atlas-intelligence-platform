@@ -5,6 +5,7 @@ from src.db.models import (
     CompanyMapping
 )
 from src.entity_resolution.resolver import resolve
+from src.entity_resolution.llm_enrich import enrich_company
 
 
 THRESHOLD = 0.60  # key fix: clustering threshold
@@ -59,12 +60,19 @@ def canonicalize():
         # CASE 2: NO MATCH → create new canonical
         else:
 
+            enriched = enrich_company(company.name)
+
             new_canonical = CanonicalCompany(
                 canonical_name=company.name,
                 website=company.website,
-                industry=None,
+
+                industry=enriched.get("industry"),
+                subcategory=enriched.get("subcategory"),
+                business_model=enriched.get("business_model"),
+                company_size=enriched.get("company_size"),
+
                 confidence=1.0
-            )
+)
 
             session.add(new_canonical)
             session.flush()
