@@ -1,0 +1,1 @@
+BASELINE_F1 = 0.80  # set after your best run

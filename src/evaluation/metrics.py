@@ -2,7 +2,7 @@ def evaluate(preds, labels):
 
     tp = fp = fn = tn = 0
 
-    for p, (_, _, l) in zip(preds, labels):
+    for p, l in zip(preds, labels):
 
         if p == 1 and l == 1:
             tp += 1

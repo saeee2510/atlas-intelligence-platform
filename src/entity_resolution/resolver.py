@@ -6,6 +6,16 @@ from src.entity_resolution.embedding_store import get_embedding
 from src.entity_resolution.llm_judge import llm_match
 from src.entity_resolution.review_queue import add_to_review_queue
 
+ALIASES = {
+    "msft": "microsoft",
+    "google llc": "google",
+    "alphabet inc": "google",
+    "open ai": "openai"
+}
+
+def normalize(name: str) -> str:
+    return ALIASES.get(name.lower(), name.lower())
+
 
 def cosine(a, b):
     return float(
@@ -37,15 +47,15 @@ def resolve(a, b):
     # 1. Fuzzy match score
     # ----------------------------------
     fuzzy = fuzz.token_set_ratio(
-        a["name"],
-        b["name"]
-    ) / 100
+        normalize(a["name"]),
+        normalize(b["name"])
+) / 100
 
     # ----------------------------------
     # 2. Embedding similarity
     # ----------------------------------
-    emb_a = get_embedding(a["name"])
-    emb_b = get_embedding(b["name"])
+    emb_a = get_embedding(f"{a['name']} {a.get('website','')}")
+    emb_b = get_embedding(f"{b['name']} {b.get('website','')}")
 
     emb_score = cosine(
         emb_a,
@@ -66,17 +76,17 @@ def resolve(a, b):
     # 4. Final weighted score
     # ----------------------------------
     score = (
-        0.20 * fuzzy +
-        0.60 * emb_score +
+        0.40 * fuzzy +
+        0.40 * emb_score +
         0.20 * website
-    )
+)
 
     score = round(score, 4)
 
     # ----------------------------------
     # 5. Human review zone
     # ----------------------------------
-    if 0.55 < score < 0.80:
+    if 0.55 < score < 0.72:
 
         # add to review queue
         if a.get("id") and b.get("id"):
@@ -112,7 +122,7 @@ def resolve(a, b):
     # ----------------------------------
     # 6. High-confidence auto match
     # ----------------------------------
-    if score >= 0.80:
+    if score >= 0.72:
         return {
             "match": True,
             "score": score,
