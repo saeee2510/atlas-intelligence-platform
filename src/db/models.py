@@ -9,6 +9,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import declarative_base
 from pgvector.sqlalchemy import Vector
+from sqlalchemy import Column, String, Float, Integer, ForeignKey, UniqueConstraint
 
 Base = declarative_base()
 
@@ -68,6 +69,15 @@ class CompanyRelationship(Base):
 
     relationship_type = Column(String)  # competitor, partner, acquired, etc.
     confidence = Column(Float)
+
+    __table_args__ = (
+        UniqueConstraint(
+            "source_company",
+            "target_company",
+            "relationship_type",
+            name="uq_company_relationship"
+        ),
+    )
 
 class ReviewQueue(Base):
     __tablename__ = "review_queue"

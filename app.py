@@ -1,9 +1,10 @@
 import streamlit as st
 
 from src.db.postgres import SessionLocal
-from src.db.models import Company, CompanyMapping, CanonicalCompany
+from src.db.models import Company, CanonicalCompany, CompanyMapping
 from src.entity_resolution.resolver import resolve
-from src.entity_resolution.review_queue import add_to_review_queue
+from src.entity_resolution.vector_search import cosine_search_candidates
+from src.entity_resolution.graph_search import get_company_graph
 from src.evaluation.run_eval import run_eval
 
 
@@ -11,16 +12,18 @@ session = SessionLocal()
 
 st.set_page_config(page_title="Atlas Intelligence System", layout="wide")
 
-st.sidebar.title("Atlas Dashboard")
-page = st.sidebar.radio("Navigate", [
+st.sidebar.title("Atlas Navigation")
+
+page = st.sidebar.radio("Go to", [
     "Company Search",
     "Review Queue",
-    "Evaluation Dashboard"
+    "Evaluation Dashboard",
+    "Knowledge Graph"
 ])
 
-# =========================
-# PAGE 1: COMPANY SEARCH
-# =========================
+# =========================================================
+# PAGE 1 — COMPANY SEARCH (VECTOR + RESOLVER)
+# =========================================================
 if page == "Company Search":
 
     st.title("🔎 Company Search")
@@ -29,33 +32,32 @@ if page == "Company Search":
 
     if query:
 
-        companies = session.query(Company).all()
+        st.subheader("Top Matches (Vector Search)")
 
-        results = []
+        candidates = cosine_search_candidates(query)
 
-        for c in companies:
+        for c in candidates[:10]:
+
+            company = session.query(Company).get(c["id"])
+
+            if not company:
+                continue
+
             result = resolve(
                 {"name": query},
-                {"name": c.name, "website": c.website}
+                {"name": company.name, "website": company.website}
             )
 
-            results.append((c, result))
+            st.write(f"### {company.name}")
+            st.write(f"Score: {result['score']:.4f}")
+            st.write(f"Match: {result['match']}")
 
-        results.sort(key=lambda x: x[1]["score"], reverse=True)
-
-        st.subheader("Top Matches")
-
-        for c, r in results[:5]:
-
-            st.write(f"**{c.name}**")
-            st.write(f"Score: {r['score']:.3f}")
-            st.write(f"Match: {r['match']}")
             st.divider()
 
 
-# =========================
-# PAGE 2: REVIEW QUEUE
-# =========================
+# =========================================================
+# PAGE 2 — REVIEW QUEUE
+# =========================================================
 elif page == "Review Queue":
 
     st.title("🧑‍💻 Review Queue")
@@ -64,19 +66,19 @@ elif page == "Review Queue":
 
     for r in reviews:
 
-        col1, col2, col3 = st.columns(3)
-
         a = session.query(Company).get(r.company_id)
         b = session.query(CanonicalCompany).get(r.canonical_company_id)
 
+        col1, col2, col3 = st.columns(3)
+
         with col1:
-            st.write(a.name)
+            st.write(a.name if a else "Unknown")
 
         with col2:
-            st.write(b.canonical_name)
+            st.write(b.canonical_name if b else "Unknown")
 
         with col3:
-            st.write(f"Score: {r.match_score:.3f}")
+            st.write(f"{r.match_score:.3f}")
 
         c1, c2 = st.columns(2)
 
@@ -84,18 +86,20 @@ elif page == "Review Queue":
             if st.button(f"Approve {r.id}"):
                 r.status = "APPROVED"
                 session.commit()
+                st.rerun()
 
         with c2:
             if st.button(f"Reject {r.id}"):
                 r.status = "REJECTED"
                 session.commit()
+                st.rerun()
 
         st.divider()
 
 
-# =========================
-# PAGE 3: EVALUATION DASHBOARD
-# =========================
+# =========================================================
+# PAGE 3 — EVALUATION DASHBOARD
+# =========================================================
 elif page == "Evaluation Dashboard":
 
     st.title("📊 Evaluation Dashboard")
@@ -107,4 +111,33 @@ elif page == "Evaluation Dashboard":
     st.metric("F1 Score", f"{metrics['f1']:.2f}")
     st.metric("Accuracy", f"{metrics['accuracy']:.2f}")
 
-    st.success("System evaluation completed successfully")
+    st.success("Evaluation complete")
+
+
+# =========================================================
+# PAGE 4 — KNOWLEDGE GRAPH
+# =========================================================
+elif page == "Knowledge Graph":
+
+    st.title("🕸️ Knowledge Graph Explorer")
+
+    query = st.text_input("Enter Company")
+
+    if query:
+
+        graph = get_company_graph(query)
+
+        if not graph:
+            st.warning("No company found in graph")
+        else:
+
+            st.subheader(graph["company"])
+
+            for rel in graph["relations"]:
+
+                st.write(
+                    f"**{graph['company']}** "
+                    f"→ {rel['type']} → "
+                    f"**{rel['company']}** "
+                    f"(confidence {rel['confidence']:.2f})"
+                )
