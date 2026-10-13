@@ -3,8 +3,8 @@ numpy
 sqlalchemy
 psycopg2-binary
 rapidfuzz
-scikit-learn
 openai
 python-dotenv
 pgvector
-tqdm
+streamlit
+pytest

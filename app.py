@@ -1,11 +1,11 @@
 import streamlit as st
 
 from src.db.postgres import SessionLocal
-from src.db.models import Company, CanonicalCompany, CompanyMapping
+from src.db.models import Company, ReviewQueue
 from src.entity_resolution.resolver import resolve
 from src.entity_resolution.vector_search import cosine_search_candidates
 from src.entity_resolution.graph_search import get_company_graph
-from src.evaluation.run_eval import run_eval
+from src.evaluation.run_eval import latest_results
 
 
 session = SessionLocal()
@@ -38,7 +38,7 @@ if page == "Company Search":
 
         for c in candidates[:10]:
 
-            company = session.query(Company).get(c["id"])
+            company = session.get(Company, c["id"])
 
             if not company:
                 continue
@@ -61,39 +61,28 @@ if page == "Company Search":
 elif page == "Review Queue":
 
     st.title("🧑‍💻 Review Queue")
+    st.caption("Pairs the LLM judge decided with low confidence")
 
-    reviews = session.query(CompanyMapping).all()
+    reviews = session.query(ReviewQueue).filter(ReviewQueue.status == "PENDING").all()
+    if not reviews:
+        st.info("Nothing to review.")
 
     for r in reviews:
-
-        a = session.query(Company).get(r.company_id)
-        b = session.query(CanonicalCompany).get(r.canonical_company_id)
-
+        a = session.get(Company, r.company_a)
+        b = session.get(Company, r.company_b)
         col1, col2, col3 = st.columns(3)
-
-        with col1:
-            st.write(a.name if a else "Unknown")
-
-        with col2:
-            st.write(b.canonical_name if b else "Unknown")
-
-        with col3:
-            st.write(f"{r.match_score:.3f}")
-
+        col1.write(a.name if a else "Unknown")
+        col2.write(b.name if b else "Unknown")
+        col3.write(f"{r.score:.3f}")
         c1, c2 = st.columns(2)
-
-        with c1:
-            if st.button(f"Approve {r.id}"):
-                r.status = "APPROVED"
-                session.commit()
-                st.rerun()
-
-        with c2:
-            if st.button(f"Reject {r.id}"):
-                r.status = "REJECTED"
-                session.commit()
-                st.rerun()
-
+        if c1.button(f"Approve {r.id}"):
+            r.status = "APPROVED"
+            session.commit()
+            st.rerun()
+        if c2.button(f"Reject {r.id}"):
+            r.status = "REJECTED"
+            session.commit()
+            st.rerun()
         st.divider()
 
 
@@ -103,15 +92,23 @@ elif page == "Review Queue":
 elif page == "Evaluation Dashboard":
 
     st.title("📊 Evaluation Dashboard")
-
-    metrics = run_eval()
-
-    st.metric("Precision", f"{metrics['precision']:.2f}")
-    st.metric("Recall", f"{metrics['recall']:.2f}")
-    st.metric("F1 Score", f"{metrics['f1']:.2f}")
-    st.metric("Accuracy", f"{metrics['accuracy']:.2f}")
-
-    st.success("Evaluation complete")
+    results = latest_results()
+    if not results:
+        st.warning("No results yet. Run: python -m src.evaluation.run_ablation")
+    else:
+        final = results["results"]["hybrid_llm"]
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Precision", f"{final['precision']:.3f}")
+        c2.metric("Recall", f"{final['recall']:.3f}")
+        c3.metric("F1", f"{final['f1']:.3f}")
+        c4.metric("LLM call rate", f"{final['llm_call_rate'] * 100:.0f}%")
+        st.subheader("Ablation (held-out test split)")
+        st.dataframe([{"configuration": k, **{m: v.get(m) for m in ("precision", "recall", "f1", "llm_calls")}}
+                      for k, v in results["results"].items()], use_container_width=True)
+        st.subheader("Blocking")
+        st.json(results["blocking"])
+        st.subheader("Remaining errors")
+        st.dataframe(results["test_errors"], use_container_width=True)
 
 
 # =========================================================

@@ -1,0 +1,462 @@
+group,split,category,label,a_name,a_website,b_name,b_website
+microsoft,test,format,1,Microsoft Corporation,microsoft.com,Microsoft Corp,microsoft.com
+microsoft,test,format,1,Microsoft Corporation,,Microsoft,microsoft.com
+microsoft,test,format,1,Microsoft Corporation,,MICROSOFT CORP.,
+microsoft,test,format,1,Microsoft Corp,microsoft.com,Microsoft,
+microsoft,test,format,1,Microsoft Corp,microsoft.com,MICROSOFT CORP.,
+microsoft,test,format,1,Microsoft,microsoft.com,MICROSOFT CORP.,microsoft.com
+microsoft,test,ticker,1,Microsoft Corporation,,MSFT,
+microsoft,test,typo,1,Microsoft Corporation,,Microsoftt Corporation,
+alphabet,test,format,1,Alphabet Inc.,,Alphabet,
+alphabet,test,format,1,Alphabet Inc.,abc.xyz,Alphabet Inc,
+alphabet,test,format,1,Alphabet,abc.xyz,Alphabet Inc,
+alphabet,test,ticker,1,Alphabet Inc.,abc.xyz,GOOGL,
+alphabet,test,typo,1,Alphabet Inc.,,Alphabet Ic.,
+google,dev,format,1,Google LLC,,Google,
+google,dev,format,1,Google LLC,google.com,Google Inc.,
+google,dev,format,1,Google,google.com,Google Inc.,google.com
+google,dev,typo,1,Google LLC,,Googl LLC,
+amazon,test,format,1,"Amazon.com, Inc.",amazon.com,Amazon,
+amazon,test,format,1,"Amazon.com, Inc.",,Amazon.com,
+amazon,test,format,1,"Amazon.com, Inc.",,Amazon Inc,
+amazon,test,format,1,Amazon,amazon.com,Amazon.com,amazon.com
+amazon,test,format,1,Amazon,,Amazon Inc,amazon.com
+amazon,test,format,1,Amazon.com,amazon.com,Amazon Inc,
+amazon,test,ticker,1,"Amazon.com, Inc.",amazon.com,AMZN,
+amazon,test,typo,1,"Amazon.com, Inc.",,Amazzon,
+aws,dev,acronym,1,"Amazon Web Services, Inc.",aws.amazon.com,AWS,
+aws,dev,format,1,"Amazon Web Services, Inc.",,Amazon Web Services,aws.amazon.com
+aws,dev,acronym,1,AWS,aws.amazon.com,Amazon Web Services,aws.amazon.com
+aws,dev,typo,1,"Amazon Web Services, Inc.",,"Amazon Web Services, Innc.",
+apple,test,format,1,Apple Inc.,,Apple,
+apple,test,format,1,Apple Inc.,apple.com,"Apple Computer, Inc.",
+apple,test,format,1,Apple,,"Apple Computer, Inc.",apple.com
+apple,test,ticker,1,Apple Inc.,apple.com,AAPL,
+apple,test,typo,1,Apple Inc.,,Appple,
+meta,dev,format,1,"Meta Platforms, Inc.",meta.com,Meta,
+meta,dev,format,1,"Meta Platforms, Inc.",,Meta Platforms,
+meta,dev,format,1,Meta,,Meta Platforms,meta.com
+instagram,test,format,1,"Instagram, LLC",instagram.com,Instagram,
+instagram,test,typo,1,"Instagram, LLC",,"Instagram, LC",
+whatsapp,dev,format,1,WhatsApp LLC,whatsapp.com,WhatsApp,whatsapp.com
+whatsapp,dev,format,1,WhatsApp LLC,,Whats App,
+whatsapp,dev,format,1,WhatsApp,,Whats App,
+netflix,test,format,1,"Netflix, Inc.",,Netflix,
+netflix,test,ticker,1,"Netflix, Inc.",,NFLX,
+netflix,test,typo,1,"Netflix, Inc.",,Netfilx,
+nvidia,dev,format,1,NVIDIA Corporation,nvidia.com,Nvidia,nvidia.com
+nvidia,dev,format,1,NVIDIA Corporation,nvidia.com,NVIDIA Corp,nvidia.com
+nvidia,dev,format,1,Nvidia,,NVIDIA Corp,nvidia.com
+nvidia,dev,ticker,1,NVIDIA Corporation,,NVDA,
+nvidia,dev,typo,1,NVIDIA Corporation,,NVIDIAA Corporation,nvidia.com
+intel,test,format,1,Intel Corporation,intel.com,Intel,
+intel,test,format,1,Intel Corporation,,Intel Corp,
+intel,test,format,1,Intel,,Intel Corp,
+intel,test,ticker,1,Intel Corporation,,INTC,
+intel,test,typo,1,Intel Corporation,,Intel Corpporation,
+amd,dev,acronym,1,"Advanced Micro Devices, Inc.",amd.com,AMD,
+amd,dev,format,1,"Advanced Micro Devices, Inc.",amd.com,Advanced Micro Devices,
+amd,dev,acronym,1,AMD,amd.com,Advanced Micro Devices,amd.com
+amd,dev,typo,1,"Advanced Micro Devices, Inc.",,"Advanced Micro Deices, Inc.",amd.com
+ibm,test,acronym,1,International Business Machines Corporation,,IBM,ibm.com
+ibm,test,format,1,International Business Machines Corporation,,IBM Corp,
+ibm,test,format,1,International Business Machines Corporation,,International Business Machines,
+ibm,test,acronym,1,IBM,ibm.com,IBM Corp,ibm.com
+ibm,test,acronym,1,IBM,ibm.com,International Business Machines,
+ibm,test,format,1,IBM Corp,,International Business Machines,
+oracle,test,format,1,Oracle Corporation,oracle.com,Oracle,
+oracle,test,format,1,Oracle Corporation,,Oracle Corp,
+oracle,test,format,1,Oracle,oracle.com,Oracle Corp,oracle.com
+oracle,test,ticker,1,Oracle Corporation,oracle.com,ORCL,
+oracle,test,typo,1,Oracle Corporation,,Oralce,
+salesforce,test,format,1,"Salesforce, Inc.",salesforce.com,Salesforce,salesforce.com
+salesforce,test,format,1,"Salesforce, Inc.",,Salesforce.com Inc,
+salesforce,test,format,1,Salesforce,salesforce.com,Salesforce.com Inc,
+salesforce,test,ticker,1,"Salesforce, Inc.",salesforce.com,CRM,
+salesforce,test,typo,1,"Salesforce, Inc.",,Sallesforce,
+adobe,dev,format,1,Adobe Inc.,,Adobe,
+adobe,dev,format,1,Adobe Inc.,adobe.com,Adobe Systems Incorporated,adobe.com
+adobe,dev,format,1,Adobe,,Adobe Systems Incorporated,
+adobe,dev,ticker,1,Adobe Inc.,,ADBE,
+adobe,dev,typo,1,Adobe Inc.,,Adboe Inc.,
+cisco,dev,format,1,"Cisco Systems, Inc.",cisco.com,Cisco,
+cisco,dev,format,1,"Cisco Systems, Inc.",cisco.com,Cisco Systems,cisco.com
+cisco,dev,format,1,Cisco,cisco.com,Cisco Systems,cisco.com
+cisco,dev,ticker,1,"Cisco Systems, Inc.",cisco.com,CSCO,
+cisco,dev,typo,1,"Cisco Systems, Inc.",,Cissco,
+hp,dev,format,1,HP Inc.,,HP,
+hp,dev,format,1,HP Inc.,hp.com,Hewlett-Packard Company,hp.com
+hp,dev,format,1,HP,hp.com,Hewlett-Packard Company,hp.com
+hp,dev,ticker,1,HP Inc.,,HPQ,
+hp,dev,typo,1,HP Inc.,,HP IInc.,
+hpe,dev,acronym,1,Hewlett Packard Enterprise Company,,HPE,
+hpe,dev,format,1,Hewlett Packard Enterprise Company,hpe.com,Hewlett Packard Enterprise,
+hpe,dev,acronym,1,HPE,,Hewlett Packard Enterprise,hpe.com
+hpe,dev,typo,1,Hewlett Packard Enterprise Company,,Hewlett Packard EEnterprise Company,
+jnj,dev,format,1,Johnson & Johnson,,Johnson and Johnson,
+jnj,dev,acronym,1,Johnson & Johnson,jnj.com,J&J,
+jnj,dev,format,1,Johnson & Johnson,,Johnson & Johnson Inc,
+jnj,dev,acronym,1,Johnson and Johnson,jnj.com,J&J,jnj.com
+jnj,dev,format,1,Johnson and Johnson,jnj.com,Johnson & Johnson Inc,
+jnj,dev,acronym,1,J&J,,Johnson & Johnson Inc,jnj.com
+jnj,dev,ticker,1,Johnson & Johnson,,JNJ,
+jnj,dev,typo,1,Johnson & Johnson,,Johnson and Jhonson,jnj.com
+johnson_controls,test,format,1,Johnson Controls International plc,,Johnson Controls,johnsoncontrols.com
+johnson_controls,test,ticker,1,Johnson Controls International plc,,JCI,
+johnson_controls,test,typo,1,Johnson Controls International plc,,Johnson Controls Intternational plc,
+pg,test,format,1,The Procter & Gamble Company,pg.com,Procter and Gamble,
+pg,test,acronym,1,The Procter & Gamble Company,,P&G,pg.com
+pg,test,format,1,The Procter & Gamble Company,pg.com,Procter & Gamble Co,pg.com
+pg,test,acronym,1,Procter and Gamble,pg.com,P&G,
+pg,test,format,1,Procter and Gamble,pg.com,Procter & Gamble Co,
+pg,test,acronym,1,P&G,pg.com,Procter & Gamble Co,
+pg,test,typo,1,The Procter & Gamble Company,,Procter annd Gamble,
+ge,dev,acronym,1,General Electric Company,,GE,
+ge,dev,format,1,General Electric Company,,General Electric,
+ge,dev,acronym,1,GE,,General Electric,
+ge,dev,typo,1,General Electric Company,,General Electric ompany,
+gm,test,acronym,1,General Motors Company,,GM,gm.com
+gm,test,format,1,General Motors Company,gm.com,General Motors,
+gm,test,acronym,1,GM,gm.com,General Motors,gm.com
+general_mills,dev,format,1,"General Mills, Inc.",,General Mills,generalmills.com
+general_mills,dev,ticker,1,"General Mills, Inc.",,GIS,
+general_mills,dev,typo,1,"General Mills, Inc.",,"Genearl Mills, Inc.",generalmills.com
+delta,test,format,1,"Delta Air Lines, Inc.",delta.com,Delta Air Lines,
+delta,test,format,1,"Delta Air Lines, Inc.",delta.com,Delta Airlines,
+delta,test,format,1,Delta Air Lines,delta.com,Delta Airlines,
+delta,test,ticker,1,"Delta Air Lines, Inc.",,DAL,
+delta,test,typo,1,"Delta Air Lines, Inc.",,"Delta Air Liness, Inc.",
+delta_faucet,test,format,1,Delta Faucet Company,,Delta Faucet,
+delta_faucet,test,typo,1,Delta Faucet Company,,Delta Fauceet Company,
+american_airlines,test,format,1,American Airlines Group Inc.,aa.com,American Airlines,
+american_airlines,test,ticker,1,American Airlines Group Inc.,,AAL,
+american_airlines,test,typo,1,American Airlines Group Inc.,,American iArlines,aa.com
+amex,test,format,1,American Express Company,americanexpress.com,American Express,americanexpress.com
+amex,test,format,1,American Express Company,,Amex,
+amex,test,format,1,American Express,,Amex,americanexpress.com
+amex,test,ticker,1,American Express Company,,AXP,
+amex,test,typo,1,American Express Company,,Ameircan Express,
+jpmorgan,test,format,1,JPMorgan Chase & Co.,,JPMorgan Chase,jpmorganchase.com
+jpmorgan,test,format,1,JPMorgan Chase & Co.,,JP Morgan Chase & Co,
+jpmorgan,test,format,1,JPMorgan Chase,jpmorganchase.com,JP Morgan Chase & Co,
+jpmorgan,test,ticker,1,JPMorgan Chase & Co.,,JPM,
+jpmorgan,test,typo,1,JPMorgan Chase & Co.,,JPMorgan Chasee & Co.,
+morgan_stanley,test,format,1,Morgan Stanley,morganstanley.com,Morgan Stanley & Co.,
+morgan_stanley,test,typo,1,Morgan Stanley,,Morgan tanley & Co.,
+goldman,test,format,1,"The Goldman Sachs Group, Inc.",goldmansachs.com,Goldman Sachs,
+goldman,test,format,1,"The Goldman Sachs Group, Inc.",goldmansachs.com,Goldman Sachs Group,goldmansachs.com
+goldman,test,format,1,Goldman Sachs,goldmansachs.com,Goldman Sachs Group,
+goldman,test,typo,1,"The Goldman Sachs Group, Inc.",,"The Gldman Sachs Group, Inc.",
+bofa,test,format,1,Bank of America Corporation,bankofamerica.com,Bank of America,bankofamerica.com
+bofa,test,acronym,1,Bank of America Corporation,bankofamerica.com,BofA,
+bofa,test,acronym,1,Bank of America,bankofamerica.com,BofA,bankofamerica.com
+bofa,test,ticker,1,Bank of America Corporation,,BAC,
+bofa,test,typo,1,Bank of America Corporation,,Bank of Aerica,
+coca_cola,dev,format,1,The Coca-Cola Company,,Coca-Cola,
+coca_cola,dev,format,1,The Coca-Cola Company,coca-colacompany.com,Coca Cola Co,coca-colacompany.com
+coca_cola,dev,format,1,Coca-Cola,,Coca Cola Co,coca-colacompany.com
+coca_cola,dev,ticker,1,The Coca-Cola Company,,KO,
+coca_cola,dev,typo,1,The Coca-Cola Company,,Cooca-Cola,coca-colacompany.com
+coca_cola_ep,dev,format,1,Coca-Cola Europacific Partners plc,cocacolaep.com,Coca-Cola Europacific Partners,
+coca_cola_ep,dev,ticker,1,Coca-Cola Europacific Partners plc,cocacolaep.com,CCEP,
+coca_cola_ep,dev,typo,1,Coca-Cola Europacific Partners plc,,Coca-oCla Europacific Partners,cocacolaep.com
+pepsico,dev,format,1,"PepsiCo, Inc.",,PepsiCo,
+pepsico,dev,format,1,"PepsiCo, Inc.",,Pepsi Co,
+pepsico,dev,format,1,PepsiCo,pepsico.com,Pepsi Co,
+pepsico,dev,ticker,1,"PepsiCo, Inc.",,PEP,
+pepsico,dev,typo,1,"PepsiCo, Inc.",,"Pepsio, Inc.",pepsico.com
+walmart,dev,format,1,Walmart Inc.,,Walmart,
+walmart,dev,format,1,Walmart Inc.,,"Wal-Mart Stores, Inc.",walmart.com
+walmart,dev,format,1,Walmart,walmart.com,"Wal-Mart Stores, Inc.",
+walmart,dev,ticker,1,Walmart Inc.,walmart.com,WMT,
+walmart,dev,typo,1,Walmart Inc.,,Walmat Inc.,walmart.com
+target,test,format,1,Target Corporation,,Target,
+target,test,format,1,Target Corporation,target.com,Target Corp,
+target,test,format,1,Target,,Target Corp,target.com
+target,test,ticker,1,Target Corporation,,TGT,
+target,test,typo,1,Target Corporation,,Targeet,
+target_hospitality,dev,format,1,Target Hospitality Corp.,targethospitality.com,Target Hospitality,
+target_hospitality,dev,typo,1,Target Hospitality Corp.,,Target Hopsitality Corp.,targethospitality.com
+openai,test,format,1,OpenAI,,Open AI,
+openai,test,format,1,OpenAI,openai.com,OpenAI Inc,
+openai,test,format,1,Open AI,,OpenAI Inc,
+openai,test,typo,1,OpenAI,,OppenAI,
+anthropic,test,format,1,Anthropic PBC,anthropic.com,Anthropic,anthropic.com
+anthropic,test,typo,1,Anthropic PBC,,Anthropiic PBC,
+tesla,dev,format,1,"Tesla, Inc.",tesla.com,Tesla,tesla.com
+tesla,dev,format,1,"Tesla, Inc.",tesla.com,Tesla Motors,
+tesla,dev,format,1,Tesla,tesla.com,Tesla Motors,
+tesla,dev,ticker,1,"Tesla, Inc.",tesla.com,TSLA,
+tesla,dev,typo,1,"Tesla, Inc.",,Tesal,tesla.com
+spacex,dev,format,1,Space Exploration Technologies Corp.,,SpaceX,
+spacex,dev,format,1,Space Exploration Technologies Corp.,spacex.com,Space X,spacex.com
+spacex,dev,format,1,SpaceX,spacex.com,Space X,
+spacex,dev,typo,1,Space Exploration Technologies Corp.,,Space Explloration Technologies Corp.,
+uber,dev,format,1,"Uber Technologies, Inc.",uber.com,Uber,
+uber,dev,typo,1,"Uber Technologies, Inc.",,"Uber Technologes, Inc.",uber.com
+lyft,test,format,1,"Lyft, Inc.",,Lyft,lyft.com
+lyft,test,typo,1,"Lyft, Inc.",,"Lyft, Icn.",
+visa,dev,format,1,Visa Inc.,,Visa,
+mastercard,dev,format,1,Mastercard Incorporated,,Mastercard,
+mastercard,dev,format,1,Mastercard Incorporated,mastercard.com,MasterCard Inc,
+mastercard,dev,format,1,Mastercard,,MasterCard Inc,
+mastercard,dev,ticker,1,Mastercard Incorporated,,MA,
+mastercard,dev,typo,1,Mastercard Incorporated,,Mastercard Incorporrated,
+block,dev,format,1,"Block, Inc.",,Block,block.xyz
+block,dev,typo,1,"Block, Inc.",,"Bock, Inc.",block.xyz
+square_enix,test,format,1,"Square Enix Holdings Co., Ltd.",,Square Enix,
+square_enix,test,typo,1,"Square Enix Holdings Co., Ltd.",,Square Eniix,square-enix.com
+paypal,test,format,1,"PayPal Holdings, Inc.",paypal.com,PayPal,
+paypal,test,format,1,"PayPal Holdings, Inc.",paypal.com,Paypal Inc,paypal.com
+paypal,test,format,1,PayPal,paypal.com,Paypal Inc,paypal.com
+paypal,test,ticker,1,"PayPal Holdings, Inc.",,PYPL,
+paypal,test,typo,1,"PayPal Holdings, Inc.",,"PayPal Holdinngs, Inc.",paypal.com
+snowflake,dev,format,1,Snowflake Inc.,,Snowflake,snowflake.com
+snowflake,dev,format,1,Snowflake Inc.,snowflake.com,Snowflake Computing,snowflake.com
+snowflake,dev,format,1,Snowflake,,Snowflake Computing,snowflake.com
+snowflake,dev,ticker,1,Snowflake Inc.,,SNOW,
+snowflake,dev,typo,1,Snowflake Inc.,,Snowlfake,snowflake.com
+databricks,dev,format,1,"Databricks, Inc.",,Databricks,databricks.com
+databricks,dev,typo,1,"Databricks, Inc.",,"Databricks, IInc.",
+teradata,test,format,1,Teradata Corporation,teradata.com,Teradata,teradata.com
+teradata,test,format,1,Teradata Corporation,teradata.com,Teradata Corp,
+teradata,test,format,1,Teradata,teradata.com,Teradata Corp,
+teradata,test,ticker,1,Teradata Corporation,teradata.com,TDC,
+teradata,test,typo,1,Teradata Corporation,,Teradata Corporatoin,
+linkedin,test,format,1,LinkedIn Corporation,linkedin.com,LinkedIn,linkedin.com
+linkedin,test,format,1,LinkedIn Corporation,linkedin.com,Linked In,
+linkedin,test,format,1,LinkedIn,linkedin.com,Linked In,
+linkedin,test,typo,1,LinkedIn Corporation,,LinkedInn Corporation,
+github,dev,format,1,"GitHub, Inc.",,GitHub,github.com
+github,dev,format,1,"GitHub, Inc.",github.com,Github Inc,
+github,dev,format,1,GitHub,,Github Inc,
+github,dev,typo,1,"GitHub, Inc.",,GitHb,
+youtube,dev,format,1,"YouTube, LLC",,YouTube,youtube.com
+youtube,dev,format,1,"YouTube, LLC",youtube.com,You Tube,
+youtube,dev,format,1,YouTube,youtube.com,You Tube,
+youtube,dev,typo,1,"YouTube, LLC",,YoouTube,
+deepmind,dev,format,1,DeepMind Technologies Limited,deepmind.google,DeepMind,
+deepmind,dev,format,1,DeepMind Technologies Limited,deepmind.google,DeepMind Technologies,deepmind.google
+deepmind,dev,format,1,DeepMind,,DeepMind Technologies,
+deepmind,dev,typo,1,DeepMind Technologies Limited,,DeeppMind,deepmind.google
+whole_foods,test,format,1,"Whole Foods Market, Inc.",wholefoodsmarket.com,Whole Foods,
+whole_foods,test,format,1,"Whole Foods Market, Inc.",,Whole Foods Market,wholefoodsmarket.com
+whole_foods,test,format,1,Whole Foods,,Whole Foods Market,
+whole_foods,test,typo,1,"Whole Foods Market, Inc.",,"Whole Fooods Market, Inc.",wholefoodsmarket.com
+toyota,dev,format,1,Toyota Motor Corporation,,Toyota,toyota.com
+toyota,dev,format,1,Toyota Motor Corporation,toyota.com,Toyota Motor Corp,
+toyota,dev,format,1,Toyota,,Toyota Motor Corp,toyota.com
+toyota,dev,ticker,1,Toyota Motor Corporation,,TM,
+toyota,dev,typo,1,Toyota Motor Corporation,,Tyoota,toyota.com
+ford,test,format,1,Ford Motor Company,,Ford,ford.com
+ford,test,format,1,Ford Motor Company,,Ford Motor Co,ford.com
+ford,test,format,1,Ford,ford.com,Ford Motor Co,
+ford,test,typo,1,Ford Motor Company,,Ford Motor Compnay,
+boeing,dev,format,1,The Boeing Company,boeing.com,Boeing,boeing.com
+boeing,dev,format,1,The Boeing Company,,Boeing Co,
+boeing,dev,format,1,Boeing,,Boeing Co,
+boeing,dev,ticker,1,The Boeing Company,boeing.com,BA,
+boeing,dev,typo,1,The Boeing Company,,Thhe Boeing Company,
+samsung,test,format,1,"Samsung Electronics Co., Ltd.",,Samsung Electronics,samsung.com
+samsung,test,format,1,"Samsung Electronics Co., Ltd.",,Samsung,
+samsung,test,format,1,Samsung Electronics,,Samsung,
+samsung,test,typo,1,"Samsung Electronics Co., Ltd.",,"Samsung Electronisc Co., Ltd.",
+sony,dev,format,1,Sony Group Corporation,sony.com,Sony,
+sony,dev,format,1,Sony Group Corporation,,Sony Corporation,sony.com
+sony,dev,format,1,Sony,,Sony Corporation,
+accenture,test,format,1,Accenture plc,accenture.com,Accenture,
+accenture,test,ticker,1,Accenture plc,accenture.com,ACN,
+accenture,test,typo,1,Accenture plc,,Accenure,
+deloitte,dev,format,1,Deloitte Touche Tohmatsu Limited,deloitte.com,Deloitte,
+deloitte,dev,format,1,Deloitte Touche Tohmatsu Limited,deloitte.com,Deloitte LLP,
+deloitte,dev,format,1,Deloitte,deloitte.com,Deloitte LLP,deloitte.com
+deloitte,dev,typo,1,Deloitte Touche Tohmatsu Limited,,Deloitte Touhe Tohmatsu Limited,
+meta,dev,rebrand,1,"Meta Platforms, Inc.",,"Facebook, Inc.",facebook.com
+block,dev,rebrand,1,"Block, Inc.",block.xyz,"Square, Inc.",squareup.com
+microsoft,test,subsidiary,0,Microsoft Corporation,,Linked In,linkedin.com
+microsoft,test,subsidiary,0,Microsoft Corp,microsoft.com,LinkedIn,
+microsoft,test,subsidiary,0,MICROSOFT CORP.,,GitHub,github.com
+microsoft,test,subsidiary,0,Microsoft Corp,microsoft.com,"GitHub, Inc.",github.com
+alphabet,test,subsidiary,0,Alphabet,,Google Inc.,
+alphabet,test,subsidiary,0,Alphabet Inc.,abc.xyz,Google LLC,
+google,dev,subsidiary,0,Google,,You Tube,youtube.com
+google,dev,subsidiary,0,Google Inc.,,YouTube,youtube.com
+alphabet,test,subsidiary,0,Alphabet Inc.,abc.xyz,DeepMind Technologies Limited,
+alphabet,test,subsidiary,0,Alphabet Inc,,DeepMind Technologies Limited,
+amazon,test,subsidiary,0,Amazon Inc,,"Amazon Web Services, Inc.",aws.amazon.com
+amazon,test,subsidiary,0,Amazon,,"Amazon Web Services, Inc.",aws.amazon.com
+amazon,test,subsidiary,0,Amazon.com,,"Whole Foods Market, Inc.",
+amazon,test,subsidiary,0,Amazon Inc,,Whole Foods Market,wholefoodsmarket.com
+meta,dev,subsidiary,0,Meta,meta.com,"Instagram, LLC",instagram.com
+meta,dev,subsidiary,0,Meta Platforms,meta.com,"Instagram, LLC",instagram.com
+meta,dev,subsidiary,0,Meta,,WhatsApp,
+meta,dev,subsidiary,0,"Meta Platforms, Inc.",,WhatsApp,
+hp,dev,lookalike,0,HP Inc.,,HPE,hpe.com
+hp,dev,lookalike,0,HP Inc.,,Hewlett Packard Enterprise Company,
+jnj,dev,lookalike,0,Johnson & Johnson Inc,jnj.com,Johnson Controls International plc,
+jnj,dev,lookalike,0,J&J,,Johnson Controls International plc,
+ge,dev,lookalike,0,General Electric,ge.com,GM,gm.com
+ge,dev,lookalike,0,General Electric Company,,GM,
+ge,dev,lookalike,0,General Electric Company,,General Mills,generalmills.com
+ge,dev,lookalike,0,General Electric Company,,"General Mills, Inc.",generalmills.com
+gm,test,lookalike,0,GM,,"General Mills, Inc.",
+gm,test,lookalike,0,General Motors Company,,"General Mills, Inc.",
+delta,test,lookalike,0,"Delta Air Lines, Inc.",,Delta Faucet Company,deltafaucet.com
+american_airlines,test,lookalike,0,American Airlines Group Inc.,,American Express,
+american_airlines,test,lookalike,0,American Airlines,aa.com,Amex,americanexpress.com
+jpmorgan,test,lookalike,0,JPMorgan Chase & Co.,jpmorganchase.com,Morgan Stanley & Co.,
+jpmorgan,test,lookalike,0,JP Morgan Chase & Co,jpmorganchase.com,Morgan Stanley & Co.,
+coca_cola,dev,lookalike,0,Coca-Cola,,Coca-Cola Europacific Partners,
+coca_cola,dev,lookalike,0,The Coca-Cola Company,coca-colacompany.com,Coca-Cola Europacific Partners plc,cocacolaep.com
+target,test,lookalike,0,Target,,Target Hospitality Corp.,
+target,test,lookalike,0,Target,,Target Hospitality,targethospitality.com
+block,dev,lookalike,0,Block,block.xyz,"Square Enix Holdings Co., Ltd.",
+block,dev,lookalike,0,Block,block.xyz,Square Enix,square-enix.com
+visa,dev,competitor,0,Visa,,Mastercard Incorporated,mastercard.com
+uber,dev,competitor,0,"Uber Technologies, Inc.",uber.com,Lyft,lyft.com
+uber,dev,competitor,0,Uber,uber.com,Lyft,
+coca_cola,dev,competitor,0,Coca Cola Co,coca-colacompany.com,"PepsiCo, Inc.",
+coca_cola,dev,competitor,0,Coca-Cola,coca-colacompany.com,PepsiCo,
+walmart,dev,competitor,0,"Wal-Mart Stores, Inc.",,Target Corp,target.com
+walmart,dev,competitor,0,Walmart Inc.,,Target Corporation,
+intel,test,competitor,0,Intel,,AMD,
+intel,test,competitor,0,Intel Corporation,intel.com,AMD,
+goldman,test,competitor,0,Goldman Sachs Group,,Morgan Stanley & Co.,
+goldman,test,competitor,0,Goldman Sachs Group,goldmansachs.com,Morgan Stanley,morganstanley.com
+snowflake,dev,competitor,0,Snowflake,,"Databricks, Inc.",databricks.com
+snowflake,dev,competitor,0,Snowflake Inc.,,"Databricks, Inc.",
+openai,test,competitor,0,Open AI,openai.com,Anthropic,
+openai,test,competitor,0,OpenAI,openai.com,Anthropic PBC,anthropic.com
+toyota,dev,competitor,0,Toyota Motor Corporation,,Ford,
+toyota,dev,competitor,0,Toyota,toyota.com,Ford Motor Company,
+nvidia,dev,competitor,0,NVIDIA Corp,nvidia.com,Advanced Micro Devices,
+nvidia,dev,competitor,0,NVIDIA Corp,,"Advanced Micro Devices, Inc.",amd.com
+oracle,test,competitor,0,Oracle,oracle.com,Salesforce.com Inc,salesforce.com
+oracle,test,competitor,0,Oracle,,"Salesforce, Inc.",salesforce.com
+jpmorgan,test,competitor,0,JPMorgan Chase & Co.,jpmorganchase.com,Bank of America Corporation,
+jpmorgan,test,competitor,0,JPMorgan Chase & Co.,jpmorganchase.com,Bank of America,bankofamerica.com
+sony,dev,competitor,0,Sony Group Corporation,,Samsung,
+accenture,test,competitor,0,Accenture plc,,Deloitte,deloitte.com
+accenture,test,competitor,0,Accenture,accenture.com,Deloitte,deloitte.com
+paypal,test,competitor,0,"PayPal Holdings, Inc.",paypal.com,"Block, Inc.",
+paypal,test,competitor,0,Paypal Inc,,"Block, Inc.",block.xyz
+pg,test,random,0,P&G,,DeepMind Technologies,deepmind.google
+uber,dev,random,0,"Uber Technologies, Inc.",,Delta Faucet,deltafaucet.com
+goldman,test,random,0,Goldman Sachs Group,,Amazon Web Services,aws.amazon.com
+alphabet,test,random,0,Alphabet,abc.xyz,Anthropic,
+delta,test,random,0,Delta Air Lines,,Amazon Web Services,
+paypal,test,random,0,Paypal Inc,paypal.com,Hewlett Packard Enterprise,hpe.com
+coca_cola,dev,random,0,Coca-Cola,,Databricks,databricks.com
+lyft,test,random,0,Lyft,,Teradata Corporation,
+visa,dev,random,0,Visa,visa.com,General Mills,generalmills.com
+jnj,dev,random,0,Johnson & Johnson,,LinkedIn Corporation,
+whole_foods,test,random,0,"Whole Foods Market, Inc.",wholefoodsmarket.com,Johnson & Johnson,jnj.com
+paypal,test,random,0,Paypal Inc,,Intel Corp,
+johnson_controls,test,random,0,Johnson Controls,johnsoncontrols.com,HP,hp.com
+whatsapp,dev,random,0,WhatsApp,,International Business Machines,
+general_mills,dev,random,0,"General Mills, Inc.",,Target Corporation,
+meta,dev,random,0,"Meta Platforms, Inc.",,"Square Enix Holdings Co., Ltd.",
+snowflake,dev,random,0,Snowflake,,"General Mills, Inc.",generalmills.com
+jnj,dev,random,0,J&J,jnj.com,"Square Enix Holdings Co., Ltd.",
+gm,test,random,0,General Motors,gm.com,"Apple Computer, Inc.",
+salesforce,test,random,0,Salesforce.com Inc,,Square Enix,
+target_hospitality,dev,random,0,Target Hospitality,targethospitality.com,Teradata Corp,
+mastercard,dev,random,0,MasterCard Inc,mastercard.com,DeepMind,deepmind.google
+samsung,test,random,0,"Samsung Electronics Co., Ltd.",,Toyota,
+whole_foods,test,random,0,Whole Foods,wholefoodsmarket.com,Procter & Gamble Co,pg.com
+github,dev,random,0,"GitHub, Inc.",,Visa,
+apple,test,random,0,Apple Inc.,,Adobe Systems Incorporated,
+nvidia,dev,random,0,NVIDIA Corp,,Meta,
+amazon,test,random,0,"Amazon.com, Inc.",amazon.com,WhatsApp LLC,
+pepsico,dev,random,0,Pepsi Co,pepsico.com,Johnson Controls International plc,
+goldman,test,random,0,Goldman Sachs,,J&J,
+goldman,test,random,0,Goldman Sachs,,Accenture plc,
+jpmorgan,test,random,0,JPMorgan Chase,jpmorganchase.com,OpenAI,
+coca_cola_ep,dev,random,0,Coca-Cola Europacific Partners,,Anthropic PBC,anthropic.com
+meta,dev,random,0,Meta,meta.com,Visa Inc.,
+paypal,test,random,0,PayPal,,Mastercard,
+visa,dev,random,0,Visa Inc.,visa.com,Tesla,
+meta,dev,random,0,Meta Platforms,,Walmart,
+openai,test,random,0,OpenAI Inc,openai.com,Microsoft Corporation,microsoft.com
+github,dev,random,0,Github Inc,,Teradata,teradata.com
+amex,test,random,0,American Express Company,americanexpress.com,Apple Inc.,
+ibm,test,random,0,IBM,,Lyft,
+delta,test,random,0,Delta Airlines,delta.com,Visa,visa.com
+morgan_stanley,test,random,0,Morgan Stanley & Co.,morganstanley.com,Hewlett Packard Enterprise Company,hpe.com
+coca_cola,dev,random,0,Coca-Cola,coca-colacompany.com,Snowflake Inc.,
+uber,dev,random,0,Uber,uber.com,"YouTube, LLC",youtube.com
+instagram,test,random,0,Instagram,instagram.com,Amazon,amazon.com
+ibm,test,random,0,IBM,,Alphabet Inc.,
+accenture,test,random,0,Accenture plc,,Teradata Corp,
+meta,dev,random,0,Meta Platforms,meta.com,Boeing Co,
+toyota,dev,random,0,Toyota Motor Corp,,NVIDIA Corp,nvidia.com
+ibm,test,random,0,IBM,ibm.com,BofA,
+bofa,test,random,0,Bank of America,,Meta Platforms,
+bofa,test,random,0,BofA,bankofamerica.com,Walmart Inc.,
+johnson_controls,test,random,0,Johnson Controls International plc,johnsoncontrols.com,BofA,bankofamerica.com
+anthropic,test,random,0,Anthropic,,GM,
+ford,test,random,0,Ford Motor Company,,MICROSOFT CORP.,microsoft.com
+target_hospitality,dev,random,0,Target Hospitality,,Delta Faucet Company,deltafaucet.com
+oracle,test,random,0,Oracle Corp,,IBM,ibm.com
+amazon,test,random,0,Amazon,,"Apple Computer, Inc.",apple.com
+whatsapp,dev,random,0,WhatsApp LLC,,"Apple Computer, Inc.",apple.com
+whatsapp,dev,random,0,WhatsApp LLC,whatsapp.com,"Square Enix Holdings Co., Ltd.",square-enix.com
+aws,dev,random,0,Amazon Web Services,aws.amazon.com,Intel Corp,intel.com
+amd,dev,random,0,AMD,,Delta Air Lines,delta.com
+uber,dev,random,0,Uber,,"The Goldman Sachs Group, Inc.",
+anthropic,test,random,0,Anthropic,,Accenture,accenture.com
+databricks,dev,random,0,Databricks,,"Amazon.com, Inc.",
+delta_faucet,test,random,0,Delta Faucet,,Intel Corporation,
+pepsico,dev,random,0,"PepsiCo, Inc.",,Meta,
+ge,dev,random,0,General Electric,,Sony,
+jnj,dev,random,0,Johnson and Johnson,jnj.com,Pepsi Co,pepsico.com
+nvidia,dev,random,0,NVIDIA Corp,,Samsung,
+lyft,test,random,0,Lyft,,AMD,
+linkedin,test,random,0,LinkedIn,,Amazon,
+accenture,test,random,0,Accenture,,Johnson Controls International plc,johnsoncontrols.com
+aws,dev,random,0,Amazon Web Services,,Uber,
+deepmind,dev,random,0,DeepMind Technologies Limited,,Anthropic,
+amex,test,random,0,American Express,,Adobe,
+accenture,test,random,0,Accenture,,GM,
+hpe,dev,random,0,Hewlett Packard Enterprise,,Morgan Stanley & Co.,
+jpmorgan,test,random,0,JPMorgan Chase & Co.,,Anthropic,
+ibm,test,random,0,International Business Machines Corporation,,Johnson Controls International plc,
+target,test,random,0,Target,target.com,"GitHub, Inc.",
+coca_cola_ep,dev,random,0,Coca-Cola Europacific Partners,cocacolaep.com,Delta Air Lines,
+github,dev,random,0,Github Inc,,American Airlines,aa.com
+snowflake,dev,random,0,Snowflake Computing,,Microsoft Corp,
+teradata,test,random,0,Teradata Corp,,Amex,
+amex,test,random,0,Amex,,General Electric Company,
+amd,dev,random,0,"Advanced Micro Devices, Inc.",,Teradata,
+goldman,test,random,0,Goldman Sachs,goldmansachs.com,LinkedIn,
+ge,dev,random,0,General Electric Company,,Anthropic,
+ibm,test,random,0,IBM Corp,ibm.com,Amazon Web Services,
+general_mills,dev,random,0,"General Mills, Inc.",,Uber,
+deloitte,dev,random,0,Deloitte LLP,,Google,
+whole_foods,test,random,0,Whole Foods Market,,"Delta Air Lines, Inc.",
+salesforce,test,random,0,Salesforce.com Inc,salesforce.com,"Lyft, Inc.",
+instagram,test,random,0,"Instagram, LLC",,Alphabet,
+lyft,test,random,0,"Lyft, Inc.",,Bank of America Corporation,
+american_airlines,test,random,0,American Airlines,aa.com,"PayPal Holdings, Inc.",
+whatsapp,dev,random,0,WhatsApp,,General Motors,gm.com
+hp,dev,random,0,Hewlett-Packard Company,,Lyft,lyft.com
+adobe,dev,random,0,Adobe,adobe.com,Ford Motor Company,
+goldman,test,random,0,Goldman Sachs Group,,LinkedIn Corporation,
+coca_cola_ep,dev,random,0,Coca-Cola Europacific Partners plc,,Lyft,
+nvidia,dev,random,0,NVIDIA Corporation,,Visa,visa.com
+anthropic,test,random,0,Anthropic,,Cisco Systems,
+delta,test,random,0,Delta Airlines,delta.com,Netflix,netflix.com
+hp,dev,random,0,HP Inc.,,American Express,americanexpress.com
+snowflake,dev,random,0,Snowflake Computing,,Johnson Controls International plc,
+target,test,random,0,Target,,"General Mills, Inc.",
+youtube,dev,random,0,You Tube,youtube.com,Oracle Corporation,oracle.com
+cisco,dev,random,0,Cisco,cisco.com,Ford Motor Co,
+hp,dev,random,0,HP Inc.,hp.com,Samsung Electronics,
+microsoft,test,random,0,Microsoft,,Johnson & Johnson Inc,
+walmart,dev,random,0,Walmart,,Toyota,
+netflix,test,random,0,Netflix,,General Electric,ge.com
+apple,test,random,0,Apple Inc.,,Tesla Motors,
+hp,dev,random,0,HP Inc.,,Amazon Web Services,aws.amazon.com
+amd,dev,random,0,AMD,,Visa,
+delta,test,random,0,Delta Air Lines,,PepsiCo,
+walmart,dev,random,0,Walmart,,Lyft,

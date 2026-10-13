@@ -1,0 +1,3474 @@
+{
+"cfb06586d2953757d903e26412074cd9e4979d18": {
+"match": true,
+"confidence": 0.9,
+"reason": "CSCO is the stock ticker for Cisco Systems, Inc.",
+"latency_ms": 1754.9,
+"tokens_in": 187,
+"tokens_out": 30
+},
+"d085e938ec311baac3d1affe872dc6228b5b3216": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 1004.2,
+"tokens_in": 184,
+"tokens_out": 16
+},
+"d3d24b346c567b663441ad11ae41b369f3412dc1": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 780.5,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"a6580df182954de6779ec035b688ec80d030bfca": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 1031.4,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"ef626f0989a8007579c50ef81d0d5dc2a1d3322a": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 967.3,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"6e9aaf25f6ff35f5a1d88c13db8f6017aa16f3ee": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 957.8,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"44c20debbb0f31afa1b0ecd068d7fc994a9a7423": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 682.1,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"d4fc6c5bc7391a165eb73ad39da24ac4c03075fa": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 761.2,
+"tokens_in": 181,
+"tokens_out": 25
+},
+"147ce3ffc94124b018a364c1d9db3ea37836ce43": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 665.9,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"5f1e630e0e8d5dd2850706c7c423d97a9971def8": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 843.5,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"123b1bb56b33b8f1f290f3578659d94c9cc1dbe1": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 738.6,
+"tokens_in": 190,
+"tokens_out": 20
+},
+"5fddaac1ec4ed13a0ae10d5a1dd3d2e77b6bd65d": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 638.2,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"624080978d4c6840b21cb61609c7512506463b91": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 679.4,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"6d2ed13763d633d102d96f1a43009e6262f0e112": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 948.3,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"0d7f5103f42e79e0a27b85933aeef165ae05c77d": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 787.1,
+"tokens_in": 192,
+"tokens_out": 20
+},
+"9b1c8ec6dc9496623940441a48bdd110e42feb54": {
+"match": true,
+"confidence": 0.9,
+"reason": "PEP is the stock ticker for PepsiCo, Inc.",
+"latency_ms": 815.5,
+"tokens_in": 184,
+"tokens_out": 30
+},
+"c9e7cf661fc4cf161e8b01f78a4e8b71570dfd04": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 671.3,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"488d2668e147332c7597cea10fe355bdff254b51": {
+"match": true,
+"confidence": 0.9,
+"reason": "WMT is the stock ticker for Walmart Inc.",
+"latency_ms": 984.2,
+"tokens_in": 186,
+"tokens_out": 28
+},
+"89503c7dc13e6d176c055cccf01f032ffd7f96c7": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 683.5,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"59df4305135539e1ee033a3288fd983dd2d1f482": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 924.5,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"72fe2c6733762c4cd68cab6f5a927aa7d0e1b256": {
+"match": false,
+"confidence": 0.5,
+"reason": "different names",
+"latency_ms": 714.6,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"25e1420eeac47c155918ec23d429948eb8c84eda": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 655.7,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"1f9d5e3364bbc870b6a73c3563c1921912751e19": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names.",
+"latency_ms": 718.5,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"506428075b7b6fc0e0272dcc1357fcacc30740eb": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 791.0,
+"tokens_in": 186,
+"tokens_out": 19
+},
+"2a69efabe4ad90eb0c70df6cc282d985fda2e32b": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names.",
+"latency_ms": 706.0,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"6c1b1bf3252353df9b08e36da866a112242bc642": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 729.7,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"126cf627a1109674b5288991ed74322c554518ad": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 707.4,
+"tokens_in": 201,
+"tokens_out": 23
+},
+"ed8befa2a2d229169fc3ef5426ea9f7b2333ffaa": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 644.7,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"d1b3d0ec45f6d66aa2cca7ef7ef8407845621396": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 687.7,
+"tokens_in": 194,
+"tokens_out": 25
+},
+"a6558cf1c69b9e11194b86dd1f5b3eebfed078a3": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 1496.1,
+"tokens_in": 191,
+"tokens_out": 23
+},
+"ae6cee6170468a93b6a36082dabac46d5ad6e92a": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names",
+"latency_ms": 618.9,
+"tokens_in": 186,
+"tokens_out": 19
+},
+"8fe3cec7b5068cc69ed3fda5a3221161e314e0d6": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 1129.7,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"dae5958192b6ccc0bd33b4854a707e2c7e5e83d5": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 791.0,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"8a797893df913ac7698260fae8cc8395cff65294": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 643.8,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"a99e05a05db4402a84ce7e021c46b37fed735584": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 815.4,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"ed1d23f943a793ba98c8c5a523e1104fd9b1ba38": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 736.3,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"f1888cd89c67be4b7b36237639cb6a255aab4633": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 684.3,
+"tokens_in": 192,
+"tokens_out": 19
+},
+"18493be709d471f33ec0433062c100d2d70f182f": {
+"match": false,
+"confidence": 0.9,
+"reason": "AWS is a subsidiary of Amazon and not the same legal entity.",
+"latency_ms": 838.3,
+"tokens_in": 187,
+"tokens_out": 31
+},
+"e094ccb3c57ec8b1b835b52cfcb2270131b4fbce": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 699.9,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"5f1948fd5e78107331fd8bcefba9cc27e2560a92": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 744.8,
+"tokens_in": 182,
+"tokens_out": 25
+},
+"131c98d097254a0c0d345e59a23d8b6e70a0f23b": {
+"match": false,
+"confidence": 0.0,
+"reason": "different company names",
+"latency_ms": 788.8,
+"tokens_in": 182,
+"tokens_out": 21
+},
+"40fb53a8cc3df43c597500af20b6e354227a4ba8": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 869.8,
+"tokens_in": 186,
+"tokens_out": 16
+},
+"e626a29ecedd63917d277fa97b3f2cd567843f2b": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 903.4,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"41793d13da2d2760975aab06eda639ba5180a121": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 686.4,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"12df1679268c0d3b4c55840f5420450629f2c815": {
+"match": false,
+"confidence": 0.0,
+"reason": "name variant typo",
+"latency_ms": 651.7,
+"tokens_in": 185,
+"tokens_out": 21
+},
+"589938f378f1b08ad8b6fb50a7df867622dced80": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 622.3,
+"tokens_in": 192,
+"tokens_out": 20
+},
+"8f177e7441888ba8192f9c93e24142f9ec011edb": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 741.7,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"ff75783ba603b86fba6f2ab15f50213b39f85bf3": {
+"match": true,
+"confidence": 0.9,
+"reason": "BA is the stock ticker for The Boeing Company.",
+"latency_ms": 1075.8,
+"tokens_in": 185,
+"tokens_out": 28
+},
+"b468040f6521c875b8654b8ec9072513e4df5aa1": {
+"match": false,
+"confidence": 0.9,
+"reason": "Different legal entities",
+"latency_ms": 766.9,
+"tokens_in": 193,
+"tokens_out": 21
+},
+"5ff9b99599ad8397b86f599b1d0e2d267010c607": {
+"match": true,
+"confidence": 1.0,
+"reason": "renamed entity",
+"latency_ms": 730.9,
+"tokens_in": 186,
+"tokens_out": 21
+},
+"b5e9494accb2d88daf45e5b9774ae2ca32e3de3a": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 659.0,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"9db62931c534b83782a28b4a44935e500b5b971c": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 676.9,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"bcd6d6324010ccbb5d561d3567ece782accbe0a4": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 835.2,
+"tokens_in": 180,
+"tokens_out": 23
+},
+"93a4a3be562af0cfe2e9e81428edd41f2338250e": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 713.0,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"c4aa684f813d6a309d84176f40d60a20aeb1f0cc": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 919.9,
+"tokens_in": 189,
+"tokens_out": 23
+},
+"ecd860ded014133683873032aab4652452918f08": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 728.7,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"6c3ced5282bf27fc80640fb125014be992ddcb62": {
+"match": false,
+"confidence": 0.8,
+"reason": "different companies with similar names",
+"latency_ms": 681.0,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"2b6f47827d3059ef27bd943084cc540acfd37052": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 682.4,
+"tokens_in": 188,
+"tokens_out": 19
+},
+"e246ed174cee642d3b1a2130f94cb121ced8403c": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 639.7,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"f4ae9b797e172d2094ac8213ed80de77412f006a": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with distinct names.",
+"latency_ms": 664.6,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"aadec91f7995b73d44df6ccdd9e1ec94b9f193b1": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 711.9,
+"tokens_in": 188,
+"tokens_out": 19
+},
+"70e57f6b2e18aa0114912b125d9b24adb4e96fd8": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 683.7,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"ff63322b165f2f3e6a4f3e87324d947d95cf68f3": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with distinct names.",
+"latency_ms": 781.6,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"808f9eddbbf4e962592ee91c92cea26445550d3d": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 734.6,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"adafbf7679ec0c0742e7ea31e56ce3efb6aa9ed3": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 919.9,
+"tokens_in": 191,
+"tokens_out": 23
+},
+"a3d9e7b65380aa5b55e6e88d2ff25c38c8c7346e": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 634.9,
+"tokens_in": 190,
+"tokens_out": 19
+},
+"aa86336c92e462808c6935f905c75a04ff78be77": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 741.7,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"7f0c730fdab59b6b31706445f03170a04fa01445": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 630.0,
+"tokens_in": 191,
+"tokens_out": 19
+},
+"1a903b18cc8a42f224ede4c310bebd777e889883": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 625.2,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"d788b41a6f2e54806e859ac9afcb4b111617acd2": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 658.1,
+"tokens_in": 186,
+"tokens_out": 19
+},
+"f5ec08e19e3aa7fb9fe42f80faec72054e686c36": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 847.0,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"dc0f3378e2c7eaa3e1df397f9f469abe4b264ae3": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 821.7,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"98f2c7c41a7bedca464ef758a6ea24377e7b91fc": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 643.2,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"c64f7853561917d4bb4cad4318b52efc0ca20275": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 625.0,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"43ec781699ea17a53da896a1aee4172f6a41d21a": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 745.6,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"3cefe05addce7e4e78df402e6743c6bfd97140d8": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 694.8,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"90bd8dd75b7829023c143f72dfa99f44bae5f9c2": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 777.0,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"5c64a41a7fbede988e03f8ebb42f472bfa6d8556": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 810.6,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"ef603625b28b428ed9d8f305c48ffe21286749c6": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 623.0,
+"tokens_in": 179,
+"tokens_out": 19
+},
+"a24dbd52b7fa4418e112100ce948eb131a486e76": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 707.9,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"68aad4fe9c2186df78d6d917bcb8709f6ee16844": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 821.4,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"836fdd6e8223fc485074c070e869f8b58b26ad5e": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 692.6,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"04d4eb5f04f0ab2b59dbf9557cb703597e659fe4": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 735.0,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"d76c48c5752dd9828644892b5f6e44aea42b656d": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 686.1,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"e52b0497e77a94f27444c250c8964c0e35c2c781": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 782.4,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"e95a9e7f1970858ee1f9d6c58d7b53366ebd8f53": {
+"match": true,
+"confidence": 0.9,
+"reason": "stock ticker variant",
+"latency_ms": 760.4,
+"tokens_in": 181,
+"tokens_out": 21
+},
+"80554592a264c25acf63b36c2d82feef8f72ad03": {
+"match": false,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 623.8,
+"tokens_in": 183,
+"tokens_out": 22
+},
+"bc9d2966994a269e4ba909483981ffab8af3e836": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 625.5,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"48a0e016704e77244d47e8a9104600f765f0d6e7": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 666.1,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"f3ff63ff984351c39fa3577aac082f1b315b217b": {
+"match": true,
+"confidence": 0.9,
+"reason": "HPQ is the stock ticker for HP Inc.",
+"latency_ms": 770.1,
+"tokens_in": 181,
+"tokens_out": 28
+},
+"6ee2ee4aecea5bc67d33ad250b4ee03e48f101a2": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in Record B",
+"latency_ms": 873.7,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"46b9bce55f00e79aa471e7355d291a8ea7900259": {
+"match": true,
+"confidence": 0.9,
+"reason": "KO is the stock ticker for The Coca-Cola Company.",
+"latency_ms": 748.6,
+"tokens_in": 182,
+"tokens_out": 29
+},
+"de6635d7da78db4a95cd5da1661a6278eed6c5c3": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 624.8,
+"tokens_in": 186,
+"tokens_out": 22
+},
+"536925caa233ebcf37927ff4c1bec3513afb733f": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 714.6,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"75efa301134ddb15876c66e18b0d97da7c2c853c": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 769.3,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"fad5f65f0d548b97582097b618003eca8fe3fc53": {
+"match": true,
+"confidence": 0.9,
+"reason": "TSLA is the stock ticker for Tesla, Inc.",
+"latency_ms": 821.9,
+"tokens_in": 186,
+"tokens_out": 29
+},
+"4b637643857ad0a7aaee671a322e20e58bbd3be0": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 864.9,
+"tokens_in": 184,
+"tokens_out": 22
+},
+"8313dc789c34f66bfd1d4d8c49989b0af31b1be2": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 773.1,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"b8fd0ee5e07a8edbb56cf62cbb65bf319b135ddb": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 782.1,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"b78b7a02ebaded6a50b204251934526a3c5c0710": {
+"match": false,
+"confidence": 0.0,
+"reason": "name variant",
+"latency_ms": 706.7,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"0e51f06d6f5aaf66049adb1859b2447412340f61": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 661.0,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"f75703fa21ae564b0214e7aead047cc320a1835c": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 651.8,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"74ff7cf510bf22a46909a457f8385dbf220a605c": {
+"match": false,
+"confidence": 0.8,
+"reason": "Different name variants",
+"latency_ms": 719.0,
+"tokens_in": 186,
+"tokens_out": 21
+},
+"713bc1c6ba8cb2ed7e51ec61653c1321c0ee959b": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 774.0,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"494a82648c890f73249c183ec9b2f3e9bb5c7c2b": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 769.4,
+"tokens_in": 184,
+"tokens_out": 16
+},
+"f859032a14211f99c44300e29365afa776cec680": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 691.4,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"ccbd5e6240151ffdf3f29a34dc7ffd608c35e72d": {
+"match": false,
+"confidence": 0.0,
+"reason": "different company names",
+"latency_ms": 698.5,
+"tokens_in": 182,
+"tokens_out": 21
+},
+"349d8347c8d352591a0ef46c1738cb56ccc0ce12": {
+"match": true,
+"confidence": 0.9,
+"reason": "Name variant",
+"latency_ms": 786.1,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"fa861d89749d6be98bfd70edc8b7e8a5456861fc": {
+"match": true,
+"confidence": 0.9,
+"reason": "Name variants of the same company",
+"latency_ms": 724.0,
+"tokens_in": 184,
+"tokens_out": 24
+},
+"165f98249687efeb5a3d4f410c97d2fe0215a725": {
+"match": false,
+"confidence": 0.9,
+"reason": "Different names; 'Deloitte' is a common abbreviation and does not specify the full legal entity.",
+"latency_ms": 710.5,
+"tokens_in": 192,
+"tokens_out": 38
+},
+"8e9e4e6d10debc03c43309b9ffb98753c224c8de": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 659.8,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"414cb230d53bddbf62fcf6bba4e023d83b0a4af9": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 723.0,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"35554dd0802c919b78dd3de8bc3eab038fc4e9ba": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 959.8,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"3c638bca340e6927553251c6c0e00e8a91187565": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 798.1,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"8f9dd14c6e848fb493ef082cd56a22d3509367ba": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 758.9,
+"tokens_in": 189,
+"tokens_out": 19
+},
+"64b88c34a00abccfbb837d14c1ebe0fc679d4c0f": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 781.0,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"fbf4cbf76fbf4152f3804a6876e99abcd931dd1e": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 697.9,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"c595872f716de6a7ef062f12be437205045dbcbf": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 650.7,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"d377ad7cb9474b94c8631e5bbdce3d29ac195aa6": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 688.6,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"f8e4ed948d0776d38640997737f25100fe98f7b2": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 726.5,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"c611ebb839ba52658883a62a27015208de717a00": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 699.4,
+"tokens_in": 189,
+"tokens_out": 23
+},
+"d360bd3d6a8ed1d5d12fb6a57342a2b7de0d1c87": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 934.6,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"1eae3126beee2a947479ec7210b9ec11f6153e3f": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 680.8,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"fe92d10a79b72f595eeb07ff79b515402527f402": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 777.5,
+"tokens_in": 189,
+"tokens_out": 23
+},
+"7ed1151db63391efe00ab806561e1996bffb30c6": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 701.6,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"b1dc8dab4178def18b1456d1f460df319eca1eec": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 683.1,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"c03f6d9800d36051e80fba1e7c8781894556cea2": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 720.8,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"765028c4437a43c7703872d2f55a21464e30a3a5": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names.",
+"latency_ms": 545.1,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"32e1973d785681ca971d781e48361201d9c0f100": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 681.3,
+"tokens_in": 195,
+"tokens_out": 19
+},
+"8652073133bf79d6712e918f10330b2c6ad29116": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 779.9,
+"tokens_in": 188,
+"tokens_out": 29
+},
+"d3d5a423a59bf74cae20f4266849636986b911f5": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 615.1,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"2d090d3755a404f8b6249568351553a3106bf4cb": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 835.6,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"73365ef1d50fbecb70364efe833f0b2b83820db7": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 919.2,
+"tokens_in": 180,
+"tokens_out": 23
+},
+"d40779740fa94ba764d24efe92f6b739181a9703": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with dissimilar names",
+"latency_ms": 723.7,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"24b60f48f5cf1d055119d9118c74ce7e5899a2fd": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 728.3,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"b0c0a087b2793e0ab54bfab7fc1b58817cc402b3": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with dissimilar names",
+"latency_ms": 753.9,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"0a17e6780d8aec83a1ceac93e968e6c888ec2b9c": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 615.8,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"4d65bcf1cced0956ec4a666d7f54d3a681d50a30": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 798.2,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"b9fbab35d90070daf2e5a750dbf38461f1c9e38a": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 689.1,
+"tokens_in": 188,
+"tokens_out": 19
+},
+"07012847099ac9643dc6d655dc363d028ae7c4d5": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 687.1,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"d65715cc4bb3a6c864c89b9ac3352275ce72901d": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 669.3,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"f41b9077d1fe35e9def6f9e65c08fa3d50a8ce9a": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 822.3,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"f97e95f1070193a87a4646a3b286a870f890758e": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 756.1,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"ebb66e3415da19ad5ccef22ed6b2b86806569f2c": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 707.7,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"57c5dce97af6981b23b8c18d48d8b3aabf1eed81": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 704.5,
+"tokens_in": 180,
+"tokens_out": 23
+},
+"34cd0fab99ec8f6a93909278efbd17473c2c0794": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 768.6,
+"tokens_in": 180,
+"tokens_out": 25
+},
+"6cbad7c1d05f917135e3e7272c6aa38c30ff9104": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 740.6,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"7ecaea11ce7c7eed008d9012b7cfb080ce1b965e": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 623.9,
+"tokens_in": 182,
+"tokens_out": 18
+},
+"21b07b534e24523bb5f9c0026b9a01e5013a714c": {
+"match": false,
+"confidence": 0.9,
+"reason": "typo in Record B",
+"latency_ms": 804.6,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"84a87ab1869358454a3f04d9b310743be8d31e49": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 707.1,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"e00e9823d37b73bba7dc18602652d864bf085d29": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 620.3,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"d9cc20d3cb420e389daaa3af3fa74ecb74fdcabb": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and abbreviations are the same entity.",
+"latency_ms": 648.9,
+"tokens_in": 185,
+"tokens_out": 28
+},
+"05dc5f207e477c0f8d7c9303e68438d78e8dcd3f": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 788.5,
+"tokens_in": 187,
+"tokens_out": 22
+},
+"3ee3084337787cb8f6969bdb008f1237826643af": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 825.0,
+"tokens_in": 190,
+"tokens_out": 22
+},
+"24475417905e6d25650a588a30018faf43882689": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 634.6,
+"tokens_in": 180,
+"tokens_out": 16
+},
+"f06222327ff757c44cdea5320ca027c37fe3aad5": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 685.0,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"12546508b989f4fb9ed00578638ce35b67c20051": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 1036.7,
+"tokens_in": 187,
+"tokens_out": 25
+},
+"96ca687884acd7d35a674c930dc597505e6f07cb": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 719.6,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"29b0759f88b2f7a19da6b216742b6d4a26bc1992": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in Record B",
+"latency_ms": 908.7,
+"tokens_in": 192,
+"tokens_out": 23
+},
+"bb00f58ec4aa0590cc1a4cfffd8ee484c777d311": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 615.9,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"e3b276c2b88f78b575e7fb5690b46f803e074ba1": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 537.5,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"1af2eba01af0dc3fa8a86c13bdf353d61757adb5": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant of the same company.",
+"latency_ms": 719.1,
+"tokens_in": 187,
+"tokens_out": 21
+},
+"96a947b843496e2a97478f1bd6bc6a76a1cd3704": {
+"match": false,
+"confidence": 0.7,
+"reason": "typo in name",
+"latency_ms": 678.1,
+"tokens_in": 188,
+"tokens_out": 22
+},
+"5770f1121343760537b495aa5c4fc30706147411": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 635.3,
+"tokens_in": 184,
+"tokens_out": 22
+},
+"39daafc0189d921e08544cf3c9e280961ba1f64d": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 652.7,
+"tokens_in": 191,
+"tokens_out": 22
+},
+"ec485e1f4130358847e95fc9d9795ca4e90ded32": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 549.9,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"bc27d3e5076af642e16ace63c47166352caa5ff0": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 648.4,
+"tokens_in": 191,
+"tokens_out": 20
+},
+"b30ceb1f0663b647e9b5080d2ab57217f1658ab4": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 787.4,
+"tokens_in": 191,
+"tokens_out": 22
+},
+"8b08a110a4d5eee6f82a0eed6302f9690aa1960f": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 1015.8,
+"tokens_in": 196,
+"tokens_out": 22
+},
+"992d4220a5ee1c038b32233682ce03fba515049e": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 555.5,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"f2d8dcb9d6cbbf28ef88223e68b6a8801934f9b3": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and typos are considered the same entity.",
+"latency_ms": 798.0,
+"tokens_in": 188,
+"tokens_out": 29
+},
+"fbbb4650b83db61da58ab026f88d44cb2368b0ac": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 676.4,
+"tokens_in": 191,
+"tokens_out": 22
+},
+"f77e9b23235fc0ee793c43cf3294a9470420e190": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 692.0,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"1d4c484dc9330711043f354e1695d07f44b8c7c0": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 571.3,
+"tokens_in": 190,
+"tokens_out": 22
+},
+"c06cfb2ba0cf31bedee7daa2a65b9305463f39bb": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 650.8,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"44b85ecad1efb0ea989be410cb4d2654d763592e": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 771.1,
+"tokens_in": 189,
+"tokens_out": 22
+},
+"131f264ae3bc47c6f25d21fbdcd0fae92fe619c1": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 740.5,
+"tokens_in": 180,
+"tokens_out": 16
+},
+"ece12a1310f1b8a5f763da963931bca4f7e85f2b": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 681.2,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"08fab8dc310e327fa4eac994593b30dd1d41e982": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 1034.7,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"d7bafc2c86ae31f7b052a53775bf0e70a2e63638": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 698.3,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"53ee63be62b6d877d2093a45aab82e28ace6ecba": {
+"match": false,
+"confidence": 0.8,
+"reason": "different company names",
+"latency_ms": 699.4,
+"tokens_in": 185,
+"tokens_out": 21
+},
+"24655bc8f28e43f8a27c8816aa19308a4487fc51": {
+"match": false,
+"confidence": 0.0,
+"reason": "different company names",
+"latency_ms": 628.0,
+"tokens_in": 190,
+"tokens_out": 21
+},
+"6bede2f23268434bc5959af18c38ae9e948fd1c8": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 710.8,
+"tokens_in": 188,
+"tokens_out": 22
+},
+"ad483c58757cb71f9b73b82364494c80cc65b603": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants are the same entity.",
+"latency_ms": 739.9,
+"tokens_in": 185,
+"tokens_out": 25
+},
+"321b7ac9603010c757ce116686f5a7f9ad4869c7": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 741.4,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"af04937b2b57241741a0ddfc237367c33285b6a8": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 694.6,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"6bb8a8fc4eb60b23e75645ab98c64c95c933f132": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants and legal suffixes",
+"latency_ms": 803.1,
+"tokens_in": 184,
+"tokens_out": 24
+},
+"0082f388f2e8e6913fdd42a27f5a221eb4b90d88": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 818.5,
+"tokens_in": 184,
+"tokens_out": 22
+},
+"116765746dc6fa19eb6e9b3da8f3afee9f4c12a8": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 604.1,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"126f28e7eecf8aa0e921bee7c0e19924ad17d1e7": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 564.8,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"3ffebd2248567efa6ec067abf6ba3c2ccdde006e": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 790.3,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"975c7572d14a178643c65ba0b83bb0a256c492e6": {
+"match": false,
+"confidence": 0.9,
+"reason": "different company names",
+"latency_ms": 691.8,
+"tokens_in": 189,
+"tokens_out": 21
+},
+"e323d1263e6c47568cf254293836a3c4962715c4": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 681.2,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"406292b400d4acb73d4819102820392d86742acb": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 694.6,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"5e17da0f20b487bf1c32f2bc6361b28bebb4d853": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 853.3,
+"tokens_in": 191,
+"tokens_out": 19
+},
+"fb11e31bec65d1486ae6896dc8a5611c9934e094": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 716.9,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"a66ad3ef58fdaabe77c727727d5c7b60b66f977f": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies",
+"latency_ms": 812.3,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"55503d004b075b2b3471379d13b78043db6f14f3": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 640.8,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"5d48d686a12db3c85c138a168df562337912dbcc": {
+"match": true,
+"confidence": 0.9,
+"reason": "ACN is the stock ticker for Accenture plc.",
+"latency_ms": 822.5,
+"tokens_in": 186,
+"tokens_out": 29
+},
+"1383a59f17cca88ec7765702740ccd6ec633c1c9": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 562.7,
+"tokens_in": 190,
+"tokens_out": 23
+},
+"2bfe024ec85bb4ae0e77873e85b9c18baa483dd0": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 943.0,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"8e9fa650e4e6709f532c4b88d9d9c1daf837f526": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 782.3,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"94900b8129b38d0d0acba9d5de15436586b4fda7": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 1359.0,
+"tokens_in": 194,
+"tokens_out": 23
+},
+"d512e2065909fa9e93472aa16eb54f303cb9c641": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 653.1,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"bd337bd1829917616b1436d04f43603c8a16db83": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 785.6,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"07360e9f2f6aed080686a4b879469961b4d7c9b2": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and abbreviations are the same entity.",
+"latency_ms": 848.7,
+"tokens_in": 188,
+"tokens_out": 28
+},
+"c185a4ea8596e652b1202c7938cb1f983bea8830": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 814.5,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"35ec3e4d6a17699e7518bbd43235cca72711e3e7": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants and legal suffixes",
+"latency_ms": 683.6,
+"tokens_in": 185,
+"tokens_out": 24
+},
+"622de62aff6b9d8adbe0cb8c0f0572ae1c70f1fd": {
+"match": true,
+"confidence": 0.9,
+"reason": "Name variant",
+"latency_ms": 691.7,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"83d08def6db44d75ed3dfb98855d8406a3aa7326": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and legal suffixes are the same entity.",
+"latency_ms": 1175.3,
+"tokens_in": 189,
+"tokens_out": 29
+},
+"548a48701eac1cff8474c5b323ab19fedd4c5716": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and legal suffixes are the same entity.",
+"latency_ms": 700.2,
+"tokens_in": 191,
+"tokens_out": 29
+},
+"942d74f97e8c80ce475242405b8351eb695d95bf": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 781.1,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"dd85c083cfac356c646504d996fe9fa15f1afe59": {
+"match": false,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 666.3,
+"tokens_in": 182,
+"tokens_out": 22
+},
+"2a1e6ca790d217acff5db6dc0e374d47f96d96e8": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 638.7,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"d331c952c3428e1f93f58d04bfdfc333ffde5728": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and legal suffixes are the same entity.",
+"latency_ms": 836.2,
+"tokens_in": 184,
+"tokens_out": 29
+},
+"086dca6e1e5cc4e85b51c5400e6b250360441cfe": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and legal suffixes are the same entity.",
+"latency_ms": 962.0,
+"tokens_in": 183,
+"tokens_out": 29
+},
+"41a7039c892a2e50ed5427ce2f89175092f1faed": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 743.2,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"a6dae7127f39e1eeb4814b75471ab7dbce51fe23": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 729.3,
+"tokens_in": 181,
+"tokens_out": 22
+},
+"796af0f444cbfbccd43f89b766d8838447840371": {
+"match": false,
+"confidence": 0.9,
+"reason": "Different company names",
+"latency_ms": 675.7,
+"tokens_in": 185,
+"tokens_out": 21
+},
+"e513ca8b395642dd67114c71ccf2422bd2435e5e": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 744.6,
+"tokens_in": 183,
+"tokens_out": 25
+},
+"c600cdfaf23ca8bc4198546fc8c9e84e6d3e68ce": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 695.8,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"8409dac49fbc07de8b221b71d4f406e7f2be25f8": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 652.0,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"1dc84f44bcdf8b79db4fc3a5439c9cf93fbb6c06": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 790.5,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"68951b7517e9e7f1b18fdaa91a39ca0e2c671a6e": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 629.9,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"9d469b177550da070524d2dfcb5040f79f902952": {
+"match": true,
+"confidence": 0.9,
+"reason": "AMZN is the stock ticker for Amazon.com, Inc.",
+"latency_ms": 866.4,
+"tokens_in": 186,
+"tokens_out": 30
+},
+"9a7d9f1a9ed99f7d6f00877b834880019de51427": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 676.3,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"3f1b59018a76d8b9974daa4a45743c1526fc62cb": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 606.5,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"96f3feacff8279bb0b7d6709f959629669c750ac": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 643.7,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"8cdbcd7e1a18c88265b2404d8a350c3ec3fe2b49": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 688.8,
+"tokens_in": 184,
+"tokens_out": 25
+},
+"d24f2a095a6e4328c8bb2478d34bc430c1a3284c": {
+"match": false,
+"confidence": 0.9,
+"reason": "different companies with similar names",
+"latency_ms": 623.1,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"610fc18a68304878eee97c236916baa83c6b1e89": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 631.2,
+"tokens_in": 181,
+"tokens_out": 18
+},
+"6d205bb63eab79ef2f0801d0cac67f84480f603a": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 685.7,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"f1eebf00a81e7cba5a66f3481fb13d8eeec94e21": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 636.9,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"6ddd8d34383ecd783563f53f81971879248df205": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 797.3,
+"tokens_in": 181,
+"tokens_out": 25
+},
+"256e7560a9c74c033755d118b7d6d206ea343560": {
+"match": true,
+"confidence": 0.9,
+"reason": "NFLX is the stock ticker for Netflix, Inc.",
+"latency_ms": 922.1,
+"tokens_in": 182,
+"tokens_out": 29
+},
+"eeedd5fec1859c555142acd1597df0be2fb018ed": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 648.3,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"3c9f78f50f3527a68f372f6c7eadc811e52145eb": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 725.3,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"ac3505d7497d6b7fa0238fcd29842ec8eb46f65b": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 775.7,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"c7320fd74eab7c3535238e6c28f0f4139d4d8906": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 760.5,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"3a96629cb6004da48ec2306ccee726424e5308e2": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 554.4,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"0142a5cca0d600d7c66f15fc82e3b64046a91c44": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 618.8,
+"tokens_in": 183,
+"tokens_out": 22
+},
+"c16702ad2c4e1f0a30c0d3354a8618c439b20419": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants are the same entity.",
+"latency_ms": 828.6,
+"tokens_in": 185,
+"tokens_out": 25
+},
+"19b680fbd923558faf6295bdf8a7b354ac82b91e": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 793.0,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"904bb28cab406da7350e5aa1c7f31200ffa77b44": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company.",
+"latency_ms": 768.8,
+"tokens_in": 184,
+"tokens_out": 25
+},
+"2ee3033028dcecd443d612d80f3a87221503c07c": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and abbreviations are the same entity.",
+"latency_ms": 821.5,
+"tokens_in": 187,
+"tokens_out": 28
+},
+"f19c72d6bba17908569d9e0db43a207c41d104ea": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 506.9,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"44ae2a53d62af8936107cbaffff35b74eca900bd": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 674.5,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"33bed6db67fd0273351c2dc566458226925d86b2": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 611.9,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"cfeeb2f72c786fe93c6af9d417dc0a9f470097fb": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 683.7,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"b72e0a0178d1034177c385f6c678afea814c7f44": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 649.1,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"3682a71dc4d6f7bfeedc53b939189f29df4815a3": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant and stock ticker",
+"latency_ms": 1800.1,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"fb159bd687d9560a8d5c8febbcfde96aa35ce024": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 695.3,
+"tokens_in": 182,
+"tokens_out": 22
+},
+"11bde7dbd9ccaa227f1ca0dfd73abc9a4e7dec48": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 620.4,
+"tokens_in": 190,
+"tokens_out": 20
+},
+"9820d96102f1c279a6e75a1fc57c7d3328a9d374": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 798.5,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"a92766a35188961b7420f436d2fdc3b22f3e1d5e": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 670.2,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"6ef3738ef04c31af364d3d1f31c0a9dc3e54e577": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 608.6,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"67c1d391ee959728156d3515bab4ad519ff64d46": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 661.5,
+"tokens_in": 184,
+"tokens_out": 18
+},
+"af778f15b61167f45fa4c8707774d537368525b0": {
+"match": true,
+"confidence": 0.9,
+"reason": "Name variant",
+"latency_ms": 725.8,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"b8566592110e63bf1eacb6ee0a75fbd248e26b1f": {
+"match": false,
+"confidence": 0.0,
+"reason": "Different names",
+"latency_ms": 2421.8,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"f66ba8fb147b5f7b4048176779e88b322424381a": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 573.5,
+"tokens_in": 186,
+"tokens_out": 22
+},
+"5d249c01429054772b166f3a34b18b2db1431696": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 765.1,
+"tokens_in": 190,
+"tokens_out": 20
+},
+"89da9c74a1cc3a49e62f0120318eff97957d5ac3": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 766.9,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"e35604b668a40896bbfde1891be715ac83af83bb": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants and legal suffixes",
+"latency_ms": 900.2,
+"tokens_in": 193,
+"tokens_out": 24
+},
+"d79def0f1af4e31076d2a13be61b980b1083bab7": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 617.2,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"15d633f48322d1942703e84831af1b97cc8e7690": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 781.6,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"5552ec6b7c6c6ddc1ef1b07cdb2d5a406c5de637": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant of the same company.",
+"latency_ms": 751.3,
+"tokens_in": 187,
+"tokens_out": 25
+},
+"ffd669ccb74b8f7b09a6fc5405e5e64047963018": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 680.5,
+"tokens_in": 188,
+"tokens_out": 22
+},
+"c293a39c90c13fbc9abfa6401890d233cf9118e1": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 578.0,
+"tokens_in": 183,
+"tokens_out": 20
+},
+"6f960abb43641f4ac4b0dc04e524e2fa3a796cce": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 636.7,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"a273bc4f7c990f18b124bccfe8cc5da29228debf": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 641.0,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"b2cc1765e3960ab48f188f23e795ff6e2630d6f6": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 764.5,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"d043799e5f375805b49d3d8892ab8792287bb062": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 604.8,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"f53ff273c5a3cd75ba106fadc34637ad3a45522c": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 709.8,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"0b7730f2caa754817eb1d7dcca8d3424040776ee": {
+"match": true,
+"confidence": 0.9,
+"reason": "DAL is the stock ticker for Delta Air Lines, Inc.",
+"latency_ms": 785.6,
+"tokens_in": 183,
+"tokens_out": 30
+},
+"ed65e92fea100ad3adc841b6759f9c687c9baf54": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 628.2,
+"tokens_in": 188,
+"tokens_out": 22
+},
+"6995a61811cb0f8a644205aa16f8dea18089ada9": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 622.5,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"f9274b7fa014e6e0027b9d2e1432bfb7865d9fea": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 643.6,
+"tokens_in": 185,
+"tokens_out": 22
+},
+"befd12610d333333641570545c998e2c116cb6ee": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 703.0,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"4afce1308ab994c9febca40f4ac2de750f80b4ea": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 625.4,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"38e7f4bf05e25aadc2897174ef46f9ec9bf48b12": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 672.7,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"a862372e351d75456a5071b0da9815da51a697be": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 647.7,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"81511858dfd07a68e7f580a886d5397b525a37a6": {
+"match": true,
+"confidence": 0.9,
+"reason": "Name variant and abbreviation",
+"latency_ms": 585.4,
+"tokens_in": 182,
+"tokens_out": 22
+},
+"f1d24735501fbe68fbba3bda25f33365e46a9155": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 494.8,
+"tokens_in": 184,
+"tokens_out": 16
+},
+"39405a3c59f2701598153bb2315f844c4cd91d7e": {
+"match": true,
+"confidence": 0.9,
+"reason": "stock ticker",
+"latency_ms": 753.0,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"4ac89de8e65a467e615d3b10c379fa1944379b83": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 576.7,
+"tokens_in": 185,
+"tokens_out": 18
+},
+"2accf817f345868c9f8a4d5ee2c9046ec3e631d2": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 657.2,
+"tokens_in": 193,
+"tokens_out": 20
+},
+"6a594251615bf6e30f3c0aa158c55726cace6bbc": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 672.2,
+"tokens_in": 188,
+"tokens_out": 20
+},
+"ad87700062d5cae9a9f065be85b4a9655be5c510": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 662.4,
+"tokens_in": 193,
+"tokens_out": 20
+},
+"51860f2184317336e75c35449ebda355c9d780bb": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 660.1,
+"tokens_in": 190,
+"tokens_out": 22
+},
+"6fba2933b94c045acce953c9bcb3c417b64f681b": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 771.3,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"303c9dfcdb608d0a205d7e421af4437144c6c7c6": {
+"match": false,
+"confidence": 0.0,
+"reason": "different names",
+"latency_ms": 718.5,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"aae876080354d9246206271273e1104779e495ce": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 701.0,
+"tokens_in": 191,
+"tokens_out": 20
+},
+"dd6a6ae06ac54fe36d00dace4e60273587059deb": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 554.8,
+"tokens_in": 196,
+"tokens_out": 20
+},
+"d119e1025affa2af226e573ba73a51eaf385cf74": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 653.7,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"ebdd271c1aab5fdf7a4fcaae60bec3da287d9623": {
+"match": false,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 712.0,
+"tokens_in": 191,
+"tokens_out": 22
+},
+"f2ab0427232c0a9fb008322ed507da4b0c7b08f1": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 728.1,
+"tokens_in": 193,
+"tokens_out": 20
+},
+"eca45773a325c8ce2d1eb71b3d147fd3367f9bdd": {
+"match": true,
+"confidence": 0.9,
+"reason": "abbreviation",
+"latency_ms": 804.3,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"a020550f56d4568d86215acf311b83df3621b45f": {
+"match": true,
+"confidence": 0.9,
+"reason": "Name variant and abbreviation of the same company.",
+"latency_ms": 912.6,
+"tokens_in": 192,
+"tokens_out": 23
+},
+"55268a3c5769dd749054d5e10eafbaac2076bf63": {
+"match": true,
+"confidence": 0.9,
+"reason": "BAC is the stock ticker for Bank of America Corporation.",
+"latency_ms": 767.9,
+"tokens_in": 182,
+"tokens_out": 29
+},
+"63bd7a17d0b8283d05437f35d8e6579112e91ba2": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 717.7,
+"tokens_in": 185,
+"tokens_out": 18
+},
+"7f7607522059a5cc3322e7510f74efccfa536222": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 983.3,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"2b99509c88d0fc823a89615c2a5470117b3865b6": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 713.1,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"c1b08eda99bee820b2b8445c43e2709e0127644e": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 786.0,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"a09975f54d55d5f202b232513953ef7936d205f3": {
+"match": true,
+"confidence": 0.9,
+"reason": "TGT is the stock ticker for Target Corporation.",
+"latency_ms": 862.8,
+"tokens_in": 181,
+"tokens_out": 28
+},
+"459b0abfef9f9c784d21afd6ded0ce424ac73184": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 638.5,
+"tokens_in": 182,
+"tokens_out": 18
+},
+"f4e63d73f2e926850b11d5f4838428f846ba5870": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 621.5,
+"tokens_in": 181,
+"tokens_out": 20
+},
+"736d3ac73a656899adbecf53a6d317a5636d2cfe": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants and legal suffixes are the same entity.",
+"latency_ms": 818.9,
+"tokens_in": 186,
+"tokens_out": 29
+},
+"eb585d2169c9cdb26ca9413d68e6c35ce726c564": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 726.0,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"2c7d76a74dbfc40131b02167410babbb02782d8a": {
+"match": false,
+"confidence": 0.0,
+"reason": "name variants are too dissimilar",
+"latency_ms": 622.0,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"6167a2121a7b9269046fd3f79ef0a37a23fc9aca": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 680.7,
+"tokens_in": 190,
+"tokens_out": 20
+},
+"4fed83c3f7fc8da0a964527168eca533bb4c51a2": {
+"match": false,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 770.7,
+"tokens_in": 187,
+"tokens_out": 22
+},
+"6fb22b21fc114f99632c1d6c6b9381af7514740a": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 728.3,
+"tokens_in": 186,
+"tokens_out": 16
+},
+"bdbf54070203994b67447a42f7bdb1148a7ccfc2": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 820.1,
+"tokens_in": 186,
+"tokens_out": 22
+},
+"78bf3ec2e0e32b980309772f49d4d71901afbc5f": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 647.7,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"774d3489691098a5d4b172867d8fcfc19b15d3ae": {
+"match": false,
+"confidence": 0.0,
+"reason": "name variant typo",
+"latency_ms": 727.9,
+"tokens_in": 192,
+"tokens_out": 21
+},
+"539a1774cd24c11c7ea7ea19ea95fe7304c1d00b": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 791.2,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"3e498dc62d8d2866313390d4ea4b9505bb2110ea": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants and legal suffixes",
+"latency_ms": 827.5,
+"tokens_in": 189,
+"tokens_out": 24
+},
+"b7f8ed7019cd43965c8e8739381e9767bc73117e": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants and legal suffixes",
+"latency_ms": 704.7,
+"tokens_in": 186,
+"tokens_out": 24
+},
+"94b7eeeeedb73b176d184cfdf9b5041919c4630b": {
+"match": true,
+"confidence": 0.9,
+"reason": "PYPL is the stock ticker for PayPal Holdings, Inc.",
+"latency_ms": 680.5,
+"tokens_in": 184,
+"tokens_out": 31
+},
+"a9d0493b672b5741a44a968e761f40a777ccf324": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 587.0,
+"tokens_in": 191,
+"tokens_out": 22
+},
+"247e81aae76999fd797492fb3b171cc1b330070d": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 698.3,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"cf3badb618ddc298cc0d72b47f8a68ebcc42b8be": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 669.4,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"858e543de0580af2262c014d0ee9e99bfef71f2c": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 799.1,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"90f07ccbd8982a30ae1312c5b6791f164b92460c": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 705.8,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"8bc3e6b88628896b8ae83ee10ebd4a8c73e0dd7f": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 828.8,
+"tokens_in": 185,
+"tokens_out": 22
+},
+"93389eced6ad43c93b9c69dddf3489fbbd6790a9": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant",
+"latency_ms": 540.9,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"7076aceb78d6d018728834b27985675d11d3f724": {
+"match": false,
+"confidence": 0.0,
+"reason": "different company names",
+"latency_ms": 737.3,
+"tokens_in": 185,
+"tokens_out": 21
+},
+"b6b31e730e0f90b97d8f57e34197ae687de7dea9": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 660.8,
+"tokens_in": 184,
+"tokens_out": 20
+},
+"b07778364cee43ccda32f201ff98c05fc8ca8e08": {
+"match": false,
+"confidence": 0.0,
+"reason": "typo in name",
+"latency_ms": 678.0,
+"tokens_in": 183,
+"tokens_out": 22
+},
+"b05415ad96752e1ccbeba3a2cd3762712159618d": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 693.7,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"734d29aa24a92418ff1cfcec38714a9920a1b11d": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants are the same entity.",
+"latency_ms": 747.7,
+"tokens_in": 189,
+"tokens_out": 25
+},
+"392a70e4ff39f87ff98630700e354c1ec17a47ca": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variants",
+"latency_ms": 707.2,
+"tokens_in": 182,
+"tokens_out": 20
+},
+"94ff915c00fda1bbfe7b6ef1db8f37375d4cd68e": {
+"match": false,
+"confidence": 0.8,
+"reason": "typo in name",
+"latency_ms": 799.7,
+"tokens_in": 192,
+"tokens_out": 22
+},
+"78d4a7eb80cb13e5c0ecfb7bd731db31f1d0b833": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variant of the same company.",
+"latency_ms": 711.6,
+"tokens_in": 183,
+"tokens_out": 21
+},
+"3ad8b5f00f50311ee355a199bfc10cc6d25e9031": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 664.9,
+"tokens_in": 185,
+"tokens_out": 20
+},
+"157a0acac38effc48abb369085dfcb2d1d306272": {
+"match": true,
+"confidence": 1.0,
+"reason": "Name variants of the same company",
+"latency_ms": 651.8,
+"tokens_in": 184,
+"tokens_out": 24
+},
+"bea939943445b2e9c08a55e77f686adc86d4293d": {
+"match": true,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 593.2,
+"tokens_in": 184,
+"tokens_out": 22
+},
+"7eb999579f31a4eff506ec00f69b15ef3820d079": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variants",
+"latency_ms": 728.1,
+"tokens_in": 187,
+"tokens_out": 20
+},
+"1dd16b13ff130f0c54bb3d006940cbdf8bb59608": {
+"match": false,
+"confidence": 0.9,
+"reason": "Different names with no clear indication they refer to the same entity.",
+"latency_ms": 909.3,
+"tokens_in": 183,
+"tokens_out": 31
+},
+"68a3909b678b1d0aa158e4609ba852cde23c1eb3": {
+"match": true,
+"confidence": 0.9,
+"reason": "name variant",
+"latency_ms": 660.3,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"554b666c80c1aed995812ee2d852a263f6532091": {
+"match": false,
+"confidence": 0.9,
+"reason": "typo in name",
+"latency_ms": 714.7,
+"tokens_in": 188,
+"tokens_out": 22
+},
+"9d90409c0658d20d31e93199a9745f6e5decde31": {
+"match": true,
+"confidence": 1.0,
+"reason": "name variant",
+"latency_ms": 677.0,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"6322c7772b451313c937400c6d78be04adbd756f": {
+"match": false,
+"confidence": 0.0,
+"reason": "name variant typo",
+"latency_ms": 596.2,
+"tokens_in": 183,
+"tokens_out": 17
+},
+"eb1916eadfd0ed32671f98d5e33e5d0851f827e5": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 635.4,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"e06506a420eb4ba26d4399a0d1ce12a9499341c1": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 669.7,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"c077600f6dc3f777bc07582a4573592a3f148c00": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 729.5,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"f8024a7b1e6075a2a9f71ce208277011ec58902a": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 706.7,
+"tokens_in": 189,
+"tokens_out": 23
+},
+"55d65f48f3ab0c3ecfe72c697120bd5373a74376": {
+"match": true,
+"confidence": 0.9,
+"reason": "Alphabet is the parent company of Google.",
+"latency_ms": 713.2,
+"tokens_in": 180,
+"tokens_out": 26
+},
+"8c4c1516b62eca4e38683f19007bcec1be125e47": {
+"match": false,
+"confidence": 0.9,
+"reason": "Different companies with similar names",
+"latency_ms": 694.0,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"1e051f4ac242caad563c818a0c2ba84cbe681edd": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 713.2,
+"tokens_in": 186,
+"tokens_out": 29
+},
+"1f4951fac45e96fb49d394deaccfb0b367f88534": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 790.8,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"87c1b186054a6b9aa6bcd91882e3ef3662c1c6f3": {
+"match": false,
+"confidence": 1.0,
+"reason": "Parent and subsidiary are not the same entity.",
+"latency_ms": 652.1,
+"tokens_in": 187,
+"tokens_out": 27
+},
+"e88b831175b1ee85a04a57b9daf3546c54fbea9d": {
+"match": false,
+"confidence": 0.0,
+"reason": "parent and subsidiary",
+"latency_ms": 764.3,
+"tokens_in": 186,
+"tokens_out": 21
+},
+"e86c381e98f7eb3cd84c10d97134ae89ada8bc0d": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 682.5,
+"tokens_in": 184,
+"tokens_out": 25
+},
+"1792cabd2d51ba61affc6d898bc72484c5156acc": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names.",
+"latency_ms": 764.5,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"bb4130932855f34cec6654c95072e565a22ba4ed": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 633.4,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"1cc1fe61ae8e98b400a47cf506088c62ed073257": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 612.4,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"78b4e89683ec3ee547147a0695c66a592ac53689": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 580.1,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"e84edcd3c4c5c994190d87de1071dc6d6295d070": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 722.9,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"7674773ac163f75299e7317a635c9412513d2f79": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 704.5,
+"tokens_in": 194,
+"tokens_out": 19
+},
+"b4afc59fedf46cc5d1f16188f37eeeb08c3130e7": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 744.1,
+"tokens_in": 193,
+"tokens_out": 23
+},
+"dce7acb1d2b3ad84c8aba6e0cadc2554c78eb3fd": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 740.7,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"338cd7a4b115e6e42a8a1beae9928e7b55398a27": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 692.8,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"0fa431614dbcb5a0104072126be80dd71ff7c86a": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 719.8,
+"tokens_in": 179,
+"tokens_out": 19
+},
+"3f488259f5627aac7a404a9e3dd36936ac81d79a": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 913.7,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"74cd52b1d62754adb2269cad750f2171969ded88": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 835.8,
+"tokens_in": 193,
+"tokens_out": 19
+},
+"67817f241aa52ca21d6d942c95e0a773624e7323": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 727.0,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"1e104e8e1453c8a2d92f0ba2734744731e4fd3a1": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 710.0,
+"tokens_in": 190,
+"tokens_out": 23
+},
+"02a8e8c155f1f6c01887efe2e075978c644890e8": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 653.0,
+"tokens_in": 188,
+"tokens_out": 19
+},
+"efea79d8af60d09338a8f88993188c36dc882188": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 704.0,
+"tokens_in": 197,
+"tokens_out": 19
+},
+"9a8c93586e1301cc8abde89ff2799ad8663e45dd": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 795.3,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"f2c73990d4d22117fb61d00d61981a88c48510ce": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 731.7,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"7bfbb63075c193a943d3aa82987762ae310c3314": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 1269.7,
+"tokens_in": 184,
+"tokens_out": 23
+},
+"3b0b1c6edf7f0f4663dd6d98e934b309fb611d63": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 803.7,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"8573193e4f4b3738d96912ab67d6ca5d94ed863f": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 554.3,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"fe282bc3d07e1dc0964cf7fc7786287a0f6bfedb": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 715.6,
+"tokens_in": 183,
+"tokens_out": 25
+},
+"e06676d1e1d841ef4e45fcc0ff2c1a094520fc63": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 1115.2,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"9e8c28e853db4d2c4f5a2fac0796de50f01414c9": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 755.6,
+"tokens_in": 191,
+"tokens_out": 19
+},
+"5a7594e6ff55630a0861b83295252961e61b52ac": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 660.9,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"1e08eba321019aae0bb0b57d00d34a2620c4fe33": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 841.2,
+"tokens_in": 193,
+"tokens_out": 23
+},
+"3d12e3ac650bd19ccefd04d36dc575fdab500537": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 844.1,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"f54426fc79ba20023202dbf20c14300d8eb43061": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 710.5,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"ea4235f5656fcf33207b5ffe5f829333ebd8f0fe": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names",
+"latency_ms": 712.0,
+"tokens_in": 186,
+"tokens_out": 19
+},
+"cb1deb939fa6e0dec20ae91c88e557d10f2c7eb1": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 736.5,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"b5baedd9da3166f12295468072dd16ff0b7bf57a": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names are NOT the same entity.",
+"latency_ms": 617.4,
+"tokens_in": 183,
+"tokens_out": 25
+},
+"de08b68755359ae466b4228f723836e2afb5b03a": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 605.8,
+"tokens_in": 191,
+"tokens_out": 19
+},
+"5cb87f3367313997e6a8dcd9eab336f60ef3faa5": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 706.9,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"bc5c613670a2a879f557775e77831f7adc8831ba": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 595.4,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"2ad77a2826e29eac18dc6b232d2b023dfe4e2f50": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 521.6,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"972e0088fbdcd7502ce9f1a590438b27280b1a58": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 621.1,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"57159d3d514a14c77606fd181046bc6e5a83cb63": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 522.6,
+"tokens_in": 190,
+"tokens_out": 23
+},
+"99b7ab56123146c56ea238383ca43e68b75311e5": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 656.7,
+"tokens_in": 181,
+"tokens_out": 19
+},
+"dea5bef788d9920582ed4e6e79358202637abc75": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies",
+"latency_ms": 752.2,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"d36a4174fba7d042d4d5880f2a12895e76fa06cb": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 713.7,
+"tokens_in": 186,
+"tokens_out": 19
+},
+"a801660e8f9ede803b91bf47ff42da7dbe8d7c60": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies",
+"latency_ms": 681.8,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"9a191f06772461b77fa374713e0b315232451f96": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 664.9,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"ce1f53b0756517a46faf255ee523ca077b4cad37": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 798.7,
+"tokens_in": 197,
+"tokens_out": 23
+},
+"298a169d611de8b09684597258460535a28b0b21": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 639.1,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"e0f778e90d4f73c5747407b21013d4e098ab2fa1": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 1003.7,
+"tokens_in": 180,
+"tokens_out": 23
+},
+"28321921a922e75b83511a8c1049ebe06fadff9d": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 748.6,
+"tokens_in": 183,
+"tokens_out": 23
+},
+"6085b752707e196ebc91a503ba25be64ea427918": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 904.2,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"57c9358ca77577dbe358de98b395eefa7cb2cc72": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 698.2,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"857d7cfb86c9984f2e03ec756ebd76031b56dea3": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 816.2,
+"tokens_in": 188,
+"tokens_out": 23
+},
+"72a029865f49c36848d7f1476c13fa0cd6d5e3db": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 637.6,
+"tokens_in": 193,
+"tokens_out": 19
+},
+"18810275987576c58356df53aabcede91f10af9e": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with dissimilar names",
+"latency_ms": 679.0,
+"tokens_in": 180,
+"tokens_out": 20
+},
+"92778fe629af4c145b4fc59d2fd945a102c8a4cc": {
+"match": false,
+"confidence": 1.0,
+"reason": "Different companies with similar names.",
+"latency_ms": 632.2,
+"tokens_in": 189,
+"tokens_out": 20
+},
+"77d9cde0027ecd2c216bae20ee6ad3484c74daf0": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 680.7,
+"tokens_in": 183,
+"tokens_out": 19
+},
+"e3e0192b4ac49630fcda1d039c7e291a6d71fe7b": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 625.8,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"d88fb738cb7f2fb62da9c02934dde7cb91f7d001": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 676.0,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"2f3f396938dcf20837414e6044fc01247a28e0b0": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 755.8,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"f54699799a2a7287e004f87a33bf7c25950dcb5d": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with different names",
+"latency_ms": 706.9,
+"tokens_in": 180,
+"tokens_out": 19
+},
+"2663dda0e3ff7d945b94217747c1a7c86bedb725": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 681.8,
+"tokens_in": 180,
+"tokens_out": 19
+},
+"c5e7debdca0d8fa4076f1507d34ea8faf6fe76fa": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 666.9,
+"tokens_in": 187,
+"tokens_out": 19
+},
+"8c8df45f7b2ceead6d591ecc6e19c5c1ace55d62": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 963.2,
+"tokens_in": 180,
+"tokens_out": 23
+},
+"9b1a073ae0bbd6cc253378bda6d5d3552c5f9d91": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 496.1,
+"tokens_in": 180,
+"tokens_out": 19
+},
+"7bb124916517bd52ed004cf3b9477f62fd6813ce": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with distinct names",
+"latency_ms": 728.9,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"8cc647a0ccefb68f6b3373a2e41c04b62f864bb2": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 693.7,
+"tokens_in": 185,
+"tokens_out": 23
+},
+"88436defaf85c86ab034d0bd3c963df5cb6b6583": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 965.3,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"6f92abbb4eaa7dc1c0025f185516c5ca893613ea": {
+"match": false,
+"confidence": 0.0,
+"reason": "different companies with similar names",
+"latency_ms": 745.4,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"9b39ac85733ffe03e390c7387078080792603452": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with different names",
+"latency_ms": 704.3,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"3c5e3d70b3ada5104973fd3efa20bc2dd48f5b5e": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 869.1,
+"tokens_in": 186,
+"tokens_out": 23
+},
+"e2fa6891dac12886a60e4d9f6019c27b7adb01ad": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 1229.4,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"7137bc3e78d9ba5aeb74beecc1d6d6f2e3325f54": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 673.1,
+"tokens_in": 189,
+"tokens_out": 23
+},
+"c279517678049bd9c4b06cd176cb54b889b8a7af": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 838.8,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"e99830d8c28b9c262692d977fff49147242b9939": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 815.9,
+"tokens_in": 185,
+"tokens_out": 19
+},
+"4b13fd04e715194c68881a7c394f7e64013e348d": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 877.7,
+"tokens_in": 187,
+"tokens_out": 23
+},
+"5c10955f6a5920a7a14ba0ac8e073dfd3197cf69": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 670.4,
+"tokens_in": 184,
+"tokens_out": 19
+},
+"06ef8c5a5b9eb49c29d34d52a14082551ed1bdd0": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 828.7,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"c9c77c7507a6b79f1f6cb1926bcc18c7e6826077": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies",
+"latency_ms": 1485.1,
+"tokens_in": 186,
+"tokens_out": 20
+},
+"f6cbc7e75d7f8fbabdfbbaa9686e97d11a1564ff": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 961.0,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"3cd87bd08ddd534f54096c936d54e8d1f19d6aac": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 621.8,
+"tokens_in": 182,
+"tokens_out": 19
+},
+"4996fe14c24cff1a6bfa37c5b2684764c9cce1a3": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 2163.2,
+"tokens_in": 182,
+"tokens_out": 23
+},
+"d1ee802cd651ca115123574c0586c08b96a4c847": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 881.6,
+"tokens_in": 181,
+"tokens_out": 23
+},
+"291bc6697f6c7261aee54e4827ba74a069ca09a8": {
+"match": false,
+"confidence": 1.0,
+"reason": "different companies with similar names",
+"latency_ms": 691.6,
+"tokens_in": 183,
+"tokens_out": 19
+}
+}

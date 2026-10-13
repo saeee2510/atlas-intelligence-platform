@@ -1,45 +1,18 @@
-from src.entity_resolution.resolver import resolve
-from src.evaluation.dataset import LABELS
-from src.evaluation.metrics import evaluate
+"""Latest evaluation results, for the dashboard. Run run_ablation.py to refresh them."""
+import glob
+import json
+
+
+def latest_results():
+    files = sorted(glob.glob("evaluation/results/ablation_*.json"))
+    return json.loads(open(files[-1]).read()) if files else None
 
 
 def run_eval():
-
-    preds = []
-    true_labels = []
-
-    print("\n===== ENTITY RESOLUTION EVALUATION =====\n")
-
-    for a, b, label in LABELS:
-
-        result = resolve(
-            {"name": a},
-            {"name": b}
-        )
-
-        pred = 1 if result["match"] else 0
-
-        preds.append(pred)
-        true_labels.append(label)
-
-        print(
-            f"{a:20} vs {b:20} => "
-            f"label={label} "
-            f"score={result['score']:.4f} "
-            f"pred={pred}"
-        )
-
-    metrics = evaluate(preds, true_labels)
-
-    print("\n===== FINAL METRICS =====")
-    print(f"Precision: {metrics['precision']:.3f}")
-    print(f"Recall: {metrics['recall']:.3f}")
-    print(f"Accuracy: {metrics['accuracy']:.3f}")
-    print(f"F1: {metrics['f1']:.3f}")
-
-    # IMPORTANT: return metrics for Streamlit
-    return metrics
+    """Final-configuration test metrics (kept for the existing dashboard)."""
+    s = latest_results()
+    return s["results"]["hybrid_llm"] if s else None
 
 
 if __name__ == "__main__":
-    run_eval()
+    print(json.dumps(run_eval(), indent=2))

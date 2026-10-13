@@ -1,10 +1,15 @@
+import os
+
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 from src.db.models import Base
 
-# Database URL (Docker Postgres)
-DB_URL = "postgresql://atlas:atlas@localhost:5450/atlas"
+load_dotenv()
+
+# Docker Postgres from docker-compose.yml (port 5451, so it can run beside other local Postgres containers)
+DB_URL = os.getenv("DATABASE_URL", "postgresql://atlas:atlas@localhost:5451/atlas")
 
 # Create engine
 engine = create_engine(DB_URL, echo=False)

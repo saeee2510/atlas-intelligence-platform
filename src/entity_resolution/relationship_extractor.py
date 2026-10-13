@@ -3,7 +3,10 @@ import os
 from openai import OpenAI
 from dotenv import load_dotenv
 
+from rapidfuzz import fuzz
+
 from src.db.postgres import SessionLocal
+from src.processing.normalize import normalize_name
 from src.db.models import CompanyRelationship, CanonicalCompany
 
 load_dotenv()
@@ -56,22 +59,22 @@ Text:
 # CANONICAL RESOLUTION
 # =========================
 def get_canonical(session, name):
+    """Exact match on normalized name first, then the closest fuzzy match >= 0.9.
 
+    The old substring check matched "AI" inside "OpenAI" and similar false hits.
+    """
     if not name:
         return None
-
-    name = name.lower()
-
-    candidates = session.query(CanonicalCompany).all()
-
-    for c in candidates:
-        if c.canonical_name and (
-            name in c.canonical_name.lower()
-            or c.canonical_name.lower() in name
-        ):
+    target = normalize_name(name)
+    best, best_score = None, 0.0
+    for c in session.query(CanonicalCompany).all():
+        candidate = normalize_name(c.canonical_name or "")
+        if candidate == target:
             return c
-
-    return None
+        score = fuzz.token_set_ratio(candidate, target) / 100
+        if score > best_score:
+            best, best_score = c, score
+    return best if best_score >= 0.9 else None
 
 
 # =========================

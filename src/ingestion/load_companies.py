@@ -1,54 +1,48 @@
+"""
+Loads company records into Postgres with cached embeddings.
+
+    python -m src.ingestion.load_companies              # data/raw/companies.csv (7 demo rows)
+    python -m src.ingestion.load_companies --benchmark  # every unique record in the benchmark (~200)
+"""
+import argparse
+
 import pandas as pd
 
-from src.db.postgres import SessionLocal, init_db
 from src.db.models import Company
+from src.db.postgres import SessionLocal, init_db
+from src.entity_resolution.embedding_cache import embed_many
+from src.evaluation.build_benchmark import load as load_benchmark
 from src.processing.normalize import normalize_name
 
-from src.entity_resolution.embedding_store import get_embedding
-from src.entity_resolution.embedding_cache import get_cached_embedding, save_cache
+
+def _rows(benchmark: bool):
+    if not benchmark:
+        df = pd.read_csv("data/raw/companies.csv").fillna("")
+        return df.to_dict("records")
+    seen, rows = {}, []
+    for p in load_benchmark():
+        for name, site in ((p["a_name"], p["a_website"]), (p["b_name"], p["b_website"])):
+            if name not in seen:
+                seen[name] = True
+                rows.append({"name": name, "website": site, "description": ""})
+    return rows
 
 
-def load_data():
+def load_data(benchmark: bool = False):
     init_db()
     session = SessionLocal()
-
-    df = pd.read_csv("data/raw/companies.csv")
-
-    for _, row in df.iterrows():
-
-        name = row["name"]
-
-        # 1. Normalize
-        normalized = normalize_name(name)
-
-        # 2. Embedding (cached + safe)
-        embedding = get_cached_embedding(
-            row["name"],
-            get_embedding
-        )
-
-        embedding = list(embedding)  # pgvector requirement
-
-        # 3. Create DB object
-        c = Company(
-            name=name,
-            normalized_name=normalized,
-            website=row.get("website"),
-            description=row.get("description"),
-            embedding=embedding
-        )
-
-        session.add(c)
-
-    # 4. Commit once (important: performance)
+    rows = _rows(benchmark)
+    vectors = embed_many([r["name"] for r in rows])
+    for r in rows:
+        session.add(Company(name=r["name"], normalized_name=normalize_name(r["name"]),
+                            website=r.get("website") or None, description=r.get("description") or None,
+                            embedding=vectors.get(r["name"])))
     session.commit()
     session.close()
-
-    # 5. Persist embedding cache
-    save_cache()
-
-    print("Data loaded successfully with embeddings")
+    print(f"Loaded {len(rows)} companies with embeddings")
 
 
 if __name__ == "__main__":
-    load_data()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--benchmark", action="store_true")
+    load_data(parser.parse_args().benchmark)

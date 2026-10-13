@@ -1,0 +1,25 @@
+{
+  "model": {
+    "features": [
+      "fuzzy",
+      "compact_ratio",
+      "acronym",
+      "website_same",
+      "website_diff",
+      "embedding"
+    ],
+    "weights": {
+      "fuzzy": 1.8583390631923893,
+      "compact_ratio": 2.0722758113924162,
+      "acronym": 1.5243109854144166,
+      "website_same": 0.7343870698745515,
+      "website_diff": -0.6008007229486013,
+      "embedding": 2.0048074900322232
+    },
+    "bias": -2.7973402637836307
+  },
+  "band_low": 0.4,
+  "band_high": 0.6,
+  "threshold": 0.46,
+  "use_llm": true
+}

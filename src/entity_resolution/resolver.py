@@ -1,139 +1,68 @@
-import json
-import numpy as np
-from rapidfuzz import fuzz
+"""
+Hybrid entity resolver: cheap signals decide the easy pairs, the LLM decides
+only the uncertain ones.
 
-from src.entity_resolution.embedding_store import get_embedding
-from src.entity_resolution.llm_judge import llm_match
-from src.entity_resolution.review_queue import add_to_review_queue
+    features (fuzzy, compact, acronym, website, embedding)
+        -> learned logistic score p(match)
+        -> p >= band_high          : auto-match   (no LLM)
+           p <= band_low           : auto-reject  (no LLM)
+           band_low < p < band_high: LLM judge decides; low-confidence LLM
+                                     answers are flagged for human review
 
-ALIASES = {
-    "msft": "microsoft",
-    "google llc": "google",
-    
-    "open ai": "openai"
+The weights and thresholds are learned on the benchmark's dev split by
+src/evaluation/run_ablation.py and saved to data/benchmark/model.json.
+This function has no side effects: callers decide what to do with
+"needs_review" (canonicalization writes those pairs to the review queue).
+"""
+from src.entity_resolution import embedding_cache, llm_judge
+from src.entity_resolution import model as scoring_model
+from src.processing.features import ALL_FEATURES, pair_features
+
+REVIEW_CONFIDENCE = 0.7
+
+# used only until run_ablation.py has trained a real model
+DEFAULT_CONFIG = {
+    "model": {"features": ALL_FEATURES, "bias": -6.0,
+              "weights": {"fuzzy": 4.0, "compact_ratio": 2.0, "acronym": 4.0,
+                          "website_same": 3.0, "website_diff": -4.0, "embedding": 3.0}},
+    "band_low": 0.2, "band_high": 0.8, "threshold": 0.5, "use_llm": True,
 }
 
-def normalize(name: str) -> str:
-    return ALIASES.get(name.lower(), name.lower())
+_config = None
 
 
-def cosine(a, b):
-    return float(
-        np.dot(a, b) /
-        (np.linalg.norm(a) * np.linalg.norm(b))
-    )
+def get_config():
+    global _config
+    if _config is None:
+        saved = scoring_model.load()
+        _config = saved if saved else DEFAULT_CONFIG
+    return _config
 
 
-def resolve(a, b):
-    """
-    Resolve whether two company records represent the same entity.
+def score_pair(a, b, config=None, embedding_sim=None):
+    config = config or get_config()
+    if "embedding" in config["model"]["features"] and embedding_sim is None:
+        vecs = embedding_cache.embed_many([a["name"], b["name"]])
+        embedding_sim = embedding_cache.cosine(vecs.get(a["name"]), vecs.get(b["name"]))
+    feats = pair_features(a, b, embedding_sim)
+    return scoring_model.predict_proba(config["model"], feats), feats
 
-    Inputs:
-    {
-        "id": 1,
-        "name": "...",
-        "website": "..."
-    }
 
-    Returns:
-    {
-        "match": bool,
-        "score": float,
-        "used_llm": bool
-    }
-    """
+def resolve(a, b, config=None, use_llm=None, embedding_sim=None) -> dict:
+    config = config or get_config()
+    use_llm = config.get("use_llm", True) if use_llm is None else use_llm
+    p, feats = score_pair(a, b, config, embedding_sim)
+    result = {"score": round(p, 4), "features": feats, "used_llm": False, "needs_review": False}
 
-    # ----------------------------------
-    # 1. Fuzzy match score
-    # ----------------------------------
-    fuzzy = fuzz.token_set_ratio(
-        normalize(a["name"]),
-        normalize(b["name"])
-) / 100
+    if not use_llm:
+        return {**result, "match": p >= config["threshold"], "decision": "model"}
+    if p >= config["band_high"]:
+        return {**result, "match": True, "decision": "auto_match"}
+    if p <= config["band_low"]:
+        return {**result, "match": False, "decision": "auto_reject"}
 
-    # ----------------------------------
-    # 2. Embedding similarity
-    # ----------------------------------
-    emb_a = get_embedding(f"{a['name']} {a.get('website','')}")
-    emb_b = get_embedding(f"{b['name']} {b.get('website','')}")
-
-    emb_score = cosine(
-        emb_a,
-        emb_b
-    )
-
-    # ----------------------------------
-    # 3. Website match rule
-    # ----------------------------------
-    website = (
-        1.0
-        if a.get("website") == b.get("website")
-        and a.get("website") is not None
-        else 0.0
-    )
-
-    # ----------------------------------
-    # 4. Final weighted score
-    # ----------------------------------
-    score = (
-        0.40 * fuzzy +
-        0.40 * emb_score +
-        0.20 * website
-)
-
-    score = round(score, 4)
-
-    # ----------------------------------
-    # 5. Human review zone
-    # ----------------------------------
-    if 0.55 < score < 0.72:
-
-        # add to review queue
-        if a.get("id") and b.get("id"):
-            add_to_review_queue(
-                company_a=a["id"],
-                company_b=b["id"],
-                score=score
-            )
-
-        # ask LLM for adjudication
-        llm_raw = llm_match(a, b)
-
-        try:
-            llm_result = json.loads(llm_raw)
-
-            return {
-                "match": llm_result.get("match", False),
-                "score": score,
-                "confidence": llm_result.get("confidence"),
-                "reason": llm_result.get("reason"),
-                "used_llm": True
-            }
-
-        except Exception:
-
-            return {
-                "match": False,
-                "score": score,
-                "used_llm": True,
-                "reason": "Failed to parse LLM response"
-            }
-
-    # ----------------------------------
-    # 6. High-confidence auto match
-    # ----------------------------------
-    if score >= 0.72:
-        return {
-            "match": True,
-            "score": score,
-            "used_llm": False
-        }
-
-    # ----------------------------------
-    # 7. Low-confidence reject
-    # ----------------------------------
-    return {
-        "match": False,
-        "score": score,
-        "used_llm": False
-    }
+    verdict = llm_judge.llm_match(a, b)
+    return {**result, "match": verdict["match"], "used_llm": True,
+            "decision": "llm_match" if verdict["match"] else "llm_reject",
+            "llm_confidence": verdict["confidence"], "reason": verdict["reason"],
+            "needs_review": verdict["confidence"] < REVIEW_CONFIDENCE}
